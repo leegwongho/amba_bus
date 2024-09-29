@@ -77,7 +77,7 @@ module tb_AXI_Memory ();
         ACLK = 1'b0;
         ARESET = 1'b0;
         #20 ARESET = 1'b1;
-
+        // 첫번째 트랜젝션
         @(posedge ACLK) begin
             aw_addr = 32'd0;            //addr 0번지부터 작성하라
             w_data  = 32'h12345678;
@@ -89,6 +89,8 @@ module tb_AXI_Memory ();
         valid = 1'b0;
         @(posedge ready);  // wait for ready signal
 
+
+        // 두번째 트랜잭션
         #100;
         @(posedge ACLK);
         aw_addr = 32'd1;                //addr 1번부터 
@@ -100,6 +102,8 @@ module tb_AXI_Memory ();
         valid = 1'b0;
         @(posedge ready);  // wait for ready signal
 
+
+        //세번째 트랜잭션
         #100;
         @(posedge ACLK);
         aw_addr = 32'd3;                //addr 3번부터
@@ -111,6 +115,57 @@ module tb_AXI_Memory ();
         valid = 1'b0;
         @(posedge ready);  // wait for ready signal
 
+
+        // 네번째 트랜잭션
+        #100;
+        @(posedge ACLK);
+        aw_addr = 32'd7;                //addr 7번부터
+        w_data  = 32'h12345678;
+        w_strb  = 4'b1111;              //78 56 43 21 write
+        valid   = 1'b1;
+
+        @(posedge ACLK);
+        valid = 1'b0;
+        @(posedge ready);  // wait for ready signal
+
+        // 두번째 트랜잭션
+        #100;
+        @(posedge ACLK);
+        aw_addr = 32'd1;                //addr 1번부터 
+        w_data  = 32'h12345678;
+        w_strb  = 4'b0011;              // 78 56 write
+        valid   = 1'b1;
+
+        @(posedge ACLK);
+        valid = 1'b0;
+        @(posedge ready);  // wait for ready signal
+
+        // 두번째 트랜잭션
+        #100;
+        @(posedge ACLK);
+        aw_addr = 32'd1;                //addr 1번부터 
+        w_data  = 32'h12345678;
+        w_strb  = 4'b0011;              // 78 56 write
+        valid   = 1'b1;
+
+        @(posedge ACLK);
+        valid = 1'b0;
+        @(posedge ready);  // wait for ready signal
+
+        // 네번째 트랜잭션
+        #100;
+        @(posedge ACLK);
+        aw_addr = 32'd7;                //addr 7번부터
+        w_data  = 32'h12345678;
+        w_strb  = 4'b1111;              //78 56 43 21 write
+        valid   = 1'b1;
+
+        @(posedge ACLK);
+        valid = 1'b0;
+        @(posedge ready);  // wait for ready signal
+
+
+        // 네번째 트랜잭션
         #100;
         @(posedge ACLK);
         aw_addr = 32'd7;                //addr 7번부터
