@@ -52,8 +52,17 @@ module axi_interface_test #(
     // 마스터가 읽기 데이터 및 응답 정보를 수신할수있음을 나타냄
 );
 
+// axi4 lite signals
 
+reg [ADDR_WIDTH - 1 : 0] axi_aw_address;
+reg axi_awre
+//////////
+localparam integer ADDR_LSB = (DATA_WIDTH/32) +1;
+localparam integer OPT_MEM_ADDR_BITS = 2;
 
+///////////
+
+reg [DATA_WIDTH - 1 : 0]      slave_reg0;
 
 
 endmodule
