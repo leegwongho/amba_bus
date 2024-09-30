@@ -5,9 +5,6 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'BRESP' [C:/github/amba_bus/tb_AXI.v:50]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'valid' [C:/github/amba_bus/tb_AXI.v:53]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'w_strb' [C:/github/amba_bus/tb_AXI.v:56]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'BREADY' [C:/github/amba_bus/tb_AXI.v:69]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.

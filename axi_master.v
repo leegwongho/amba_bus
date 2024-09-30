@@ -52,6 +52,7 @@ module axi_master(
             read_addr_reg_next = 0;
         end
         else begin
+            AWVALID = 1'b0;
             read_addr_reg_next = read_addr_reg;
             case (read_state) 
                 READ_IDLE : begin
@@ -153,10 +154,10 @@ module axi_master(
         end
         else begin
             response_reg_next = response_reg;
+            ready = 1'b0;
             case (resp_state)
                 RESP_IDLE :  begin
                     BREADY = 1'b0;
-                    ready = 1'b0;
                     if (WVALID) begin // write data 가 전송되면 다음 state로 변경
                         resp_state_next = RESP_READY;
                     end

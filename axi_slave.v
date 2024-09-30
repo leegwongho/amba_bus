@@ -15,7 +15,7 @@ module axi_slave(
     output reg          WREADY,
 
     // response Channel
-    input      [1:0]    BREADY,
+    input               BREADY,
     output reg          BRESP,
     output reg          BVALID);
 
