@@ -45,7 +45,7 @@ module axi_master(
         end 
     end
 
-    always @ (*) begin
+    always @ (posedge ACLK) begin
         if (!ARESET) begin
             read_state_next = READ_IDLE;
             AWVALID = 1'b0;
@@ -96,7 +96,7 @@ module axi_master(
         end
     end
 
-    always @(*) begin
+    always @(posedge ACLK) begin
         if (!ARESET) begin
             w_state_next = W_IDLE;
             WVALID = 1'b0;
@@ -145,7 +145,7 @@ module axi_master(
         end
     end
 
-    always @(*) begin
+    always @(posedge ACLK) begin
         if (!ARESET) begin
             resp_state_next = RESP_IDLE;
             response_reg_next = 0;

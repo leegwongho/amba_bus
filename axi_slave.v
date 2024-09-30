@@ -40,7 +40,7 @@ module axi_slave(
         end
     end
 
-    always @ (*) begin
+    always @ (posedge ACLK) begin
         if(!ARESET) begin
             read_state_next = READ_IDLE;
             AWREADY = 1'b0;
@@ -88,7 +88,7 @@ module axi_slave(
         end
     end
 
-    always @ (*) begin
+    always @ (posedge ACLK) begin
         if(!ARESET) begin
             write_state_next = WRITE_IDLE;
             WREADY = 1'b0;
@@ -149,7 +149,7 @@ module axi_slave(
         end
     end
 
-    always @ (*) begin
+    always @ (posedge ACLK) begin
         if(!ARESET) begin
             response_state_next = RESPONSE_IDLE;
             response_reg = 0;
