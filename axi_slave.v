@@ -3,7 +3,7 @@ module axi_slave(
     input ACLK,
     input ARESET,
 
-    // aw(read) channel
+    // aw(address write) channel
     input      [31:0]   AWADDR,
     input               AWVALID,
     output reg          AWREADY,
@@ -21,46 +21,46 @@ module axi_slave(
 
     reg [7:0] slave_memory[0:15];
 
-    // read channel //
+    // AW channel //
     reg [31:0] aw_addr_reg, aw_addr_reg_next;
 
-    parameter READ_IDLE = 2'b01;
-    parameter READ_READY = 2'b10;
+    parameter AW_IDLE = 2'b01;
+    parameter AW_READY = 2'b10;
 
-    reg [1:0] read_state, read_state_next;
+    reg [1:0] aw_state, aw_state_next;
 
     always @ (posedge ACLK , negedge ARESET) begin
         if(!ARESET) begin
-            read_state = READ_IDLE;
+            aw_state = AW_IDLE;
             aw_addr_reg = 0;
         end
         else begin
-            read_state = read_state_next;
+            aw_state = aw_state_next;
             aw_addr_reg = aw_addr_reg_next;
         end
     end
 
     always @ (posedge ACLK) begin
         if(!ARESET) begin
-            read_state_next = READ_IDLE;
+            aw_state_next = AW_IDLE;
             AWREADY = 1'b0;
         end
         else begin
-            case (read_state) 
-                READ_IDLE: begin
+            case (aw_state) 
+                AW_IDLE: begin
                     AWREADY = 1'b0;
                     if (AWVALID) begin // valid 신호 수신
-                        read_state_next = READ_READY;
+                        aw_state_next = AW_READY;
                     end
                 end 
-                READ_READY : begin
+                AW_READY : begin
                     AWREADY = 1'b1;
                     aw_addr_reg_next = AWADDR;
                     if (AWVALID && AWREADY) begin
-                        read_state_next = READ_IDLE;
+                        aw_state_next = AW_IDLE;
                     end
                 end
-                default: read_state_next = READ_IDLE;
+                default: aw_state_next = AW_IDLE;
             endcase
         end
     end

@@ -3,7 +3,7 @@ module axi_master(
     input               ACLK,
     input               ARESET,
     
-    // AW(read)CHANNEL
+    // AW(address write)CHANNEL
     input               AWREADY,
     output  reg         AWVALID,
     output  reg [31:0]  AWADDR,
@@ -26,50 +26,50 @@ module axi_master(
     input        [3:0]  w_strb,
     output  reg         ready);
 
-    // read channel //
-    reg [31:0] read_addr_reg, read_addr_reg_next;
+    // aw channel //
+    reg [31:0] aw_addr_reg, aw_addr_reg_next;
 
-    parameter READ_IDLE = 2'b01;
-    parameter READ_VALID = 2'b10;
+    parameter AW_IDLE = 2'b01;
+    parameter AW_VALID = 2'b10;
 
-    reg [1:0] read_state, read_state_next;
+    reg [1:0] aw_state, aw_state_next;
 
     always @(posedge ACLK , negedge ARESET) begin
         if (!ARESET) begin
-            read_state = READ_IDLE;
-            read_addr_reg = 0;
+            aw_state = AW_IDLE;
+            aw_addr_reg = 0;
         end 
         else begin
-            read_state = read_state_next;
-            read_addr_reg = read_addr_reg_next;
+            aw_state = aw_state_next;
+            aw_addr_reg = aw_addr_reg_next;
         end 
     end
 
     always @ (posedge ACLK) begin
         if (!ARESET) begin
-            read_state_next = READ_IDLE;
+            aw_state_next = AW_IDLE;
             AWVALID = 1'b0;
-            read_addr_reg_next = 0;
+            aw_addr_reg_next = 0;
         end
         else begin
             AWVALID = 1'b0;
-            read_addr_reg_next = read_addr_reg;
-            case (read_state) 
-                READ_IDLE : begin
+            aw_addr_reg_next = aw_addr_reg;
+            case (aw_state) 
+                AW_IDLE : begin
                     AWVALID = 1'b0; // 데이터 전송을 하지않는것을 slave 에게 알리는 비트
                     if (valid) begin // cpu -> axi 한테 데이터를 요청
-                        read_state_next = READ_VALID;
-                        read_addr_reg_next = aw_addr;   // cpu가 보낸 주소 
+                        aw_state_next = AW_VALID;
+                        aw_addr_reg_next = aw_addr;   // cpu가 보낸 주소 
                     end                
                 end
-                READ_VALID : begin
+                AW_VALID : begin
                     AWVALID = 1'b1; // 데이터 전송중임을 slave 에게 알리는 비트
-                    AWADDR = read_addr_reg;
+                    AWADDR = aw_addr_reg;
                     if (AWVALID && AWREADY) begin
-                        read_state_next = READ_IDLE;
+                        aw_state_next = AW_IDLE;
                     end
                 end
-                default: read_state_next = READ_IDLE;
+                default: aw_state_next = AW_IDLE;
             endcase
         end
     end
