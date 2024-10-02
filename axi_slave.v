@@ -14,12 +14,112 @@ module axi_slave(
     input      [3:0]    WSTRB,
     output reg          WREADY,
 
+    // AR channel
+    input               ARVALID,
+    input      [31:0]   ARADDR,
+    output  reg         ARREADY,
+
+    // R channel
+    input               RREADY,
+    output     [31:0]   RDATA,
+  //  output  reg         RLAST,  // 데이터 여러개 요청 구현할때 추가
+    output  reg         RVALID,
+
+
     // response Channel
     input               BREADY,
     output reg          BRESP,
     output reg          BVALID);
 
     reg [7:0] slave_memory[0:15];
+
+
+    // AR channel //
+    reg [31:0] ar_addr_reg, ar_addr_reg_next;
+
+    parameter AR_IDLE = 2'b01;
+    parameter AR_READY = 2'b10;
+
+    reg [1:0] ar_state, ar_state_next;
+
+    always @(posedge ACLK, negedge ARESET) begin
+        if (!ARESET) begin
+            ar_state = AR_IDLE;
+            ar_addr_reg = 0;
+        end
+        else begin
+            ar_state = ar_state_next;
+            ar_addr_reg = ar_addr_reg_next;
+        end
+    end
+
+    always @(posedge ACLK) begin
+        if (!ARESET) begin
+            ar_state_next = AR_IDLE;
+            ARREADY = 1'b0;
+        end
+        else begin
+            ARREADY = 1'b0;
+            case (ar_state)
+                AR_IDLE : begin
+                    ARREADY = 1'b0;
+                    if (ARVALID) begin
+                        ar_state_next = AR_READY;
+                    end
+                end
+                AR_READY : begin
+                    ARREADY = 1'b1;
+                    ar_addr_reg_next = ARADDR;
+                    if (ARREADY && ARVALID) begin
+                        ar_state_next = AR_IDLE;
+                    end
+                end 
+                default: ;
+            endcase
+        end
+    end
+
+    // R channel //
+    reg [31:0] rdata_reg, rdata_reg_next;
+
+    parameter R_IDLE = 2'b01;
+    parameter R_VALID = 2'b10;
+
+    reg [1:0] r_state, r_state_next;
+
+    always @(posedge ACLK, negedge ARESET) begin
+        if (!ARESET) begin
+            r_state = R_IDLE;
+            rdata_reg = 0;
+        end
+        else begin
+            r_state = r_state_next;
+            rdata_reg = rdata_reg_next;
+        end
+    end
+
+    always @(posedge ACLK) begin
+        if (!ARESET) begin
+            r_state_next = R_IDLE;
+            rdata_reg_next = 0;
+            RVALID = 1'b0;
+        end
+        else begin
+            case (r_state)
+                R_IDLE : begin
+                    RVALID = 1'b0;
+                    if (ARREADY && RREADY) begin
+                        r_state_next = R_VALID;
+                    end
+                end
+                R_VALID : begin
+                    RVALID = 1'b1;
+                    rdata_reg_next = slave_memory[ar_addr_reg];
+                end 
+                default: ;
+            endcase
+        end
+    end
 
     // AW channel //
     reg [31:0] aw_addr_reg, aw_addr_reg_next;

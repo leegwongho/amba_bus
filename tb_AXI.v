@@ -50,10 +50,19 @@ module tb_AXI_Memory ();
                             BRESP,
                             BVALID,
                             BREADY,
+                            ARREADY,
+                            ARVALID,
+                            ARADDR,
+                            RDATA,
+                            RVALID,
+                            RREADY,
+                            valid_r,
                             valid,
+                            ar_addr,
                             aw_addr,
                             w_data,
                             w_strb,
+                            r_data,
                             ready);
 
 
