@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.95165",
-   "Default View_TopLeft":"767,116",
+   "Default View_ScaleFactor":"1.54596",
+   "Default View_TopLeft":"969,160",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -34,7 +34,7 @@ preplace netloc axi_uartlite_0_UART 1 5 1 N 170
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 N 160
 preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1350 180n
 levelinfo -pg 1 0 110 380 810 1210 1480 1610
-pagesize -pg 1 -db -bbox -sgen -110 0 1730 670
+pagesize -pg 1 -db -bbox -sgen -110 0 1720 670
 "
 }
 {
