@@ -184,5 +184,15 @@ module tb_AXI_Memory ();
         @(posedge ACLK);
         valid_r = 1'b0;
         @(posedge RVALID);
+
+        // 여섯번째 트랜잭션
+        #100
+        @(posedge ACLK);
+        valid_r = 1'b1;
+        ar_addr = 32'd2;
+
+        @(posedge ACLK);
+        valid_r = 1'b0;
+        @(posedge RVALID);    
     end
 endmodule
