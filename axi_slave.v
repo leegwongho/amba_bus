@@ -22,7 +22,6 @@ module axi_slave(
     // R channel
     input               RREADY,
     output  reg [31:0]  RDATA,
-  //  output  reg         RLAST,  // 데이터 여러개 요청 구현할때 추가
     output  reg         RVALID,
 
 

@@ -26,7 +26,6 @@ module axi_master(
 
     // R(read) CHANNEL  
     input       [31:0]  RDATA,
-  //  input               RLAST,   // 데이터 여러개 요청 구현할때 추가
     input               RVALID,
     output reg          RREADY,
 
