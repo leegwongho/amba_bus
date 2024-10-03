@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AXI_Memory_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_AXI_Memory" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="480000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wave_markers>
+      <marker time="340000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_AXI_Memory/ACLK" type="logic">
+      <obj_property name="ElementShortName">ACLK</obj_property>
+      <obj_property name="ObjectShortName">ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ARESET" type="logic">
+      <obj_property name="ElementShortName">ARESET</obj_property>
+      <obj_property name="ObjectShortName">ARESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/AWADDR" type="array">
+      <obj_property name="ElementShortName">AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/AWVALID" type="logic">
+      <obj_property name="ElementShortName">AWVALID</obj_property>
+      <obj_property name="ObjectShortName">AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/AWREADY" type="logic">
+      <obj_property name="ElementShortName">AWREADY</obj_property>
+      <obj_property name="ObjectShortName">AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/WDATA" type="array">
+      <obj_property name="ElementShortName">WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/WVALID" type="logic">
+      <obj_property name="ElementShortName">WVALID</obj_property>
+      <obj_property name="ObjectShortName">WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/WSTRB" type="array">
+      <obj_property name="ElementShortName">WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/WREADY" type="logic">
+      <obj_property name="ElementShortName">WREADY</obj_property>
+      <obj_property name="ObjectShortName">WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/BRESP" type="logic">
+      <obj_property name="ElementShortName">BRESP</obj_property>
+      <obj_property name="ObjectShortName">BRESP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/BVALID" type="logic">
+      <obj_property name="ElementShortName">BVALID</obj_property>
+      <obj_property name="ObjectShortName">BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/BREADY" type="logic">
+      <obj_property name="ElementShortName">BREADY</obj_property>
+      <obj_property name="ObjectShortName">BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/aw_addr" type="array">
+      <obj_property name="ElementShortName">aw_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/w_data" type="array">
+      <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/valid_r" type="logic">
+      <obj_property name="ElementShortName">valid_r</obj_property>
+      <obj_property name="ObjectShortName">valid_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ar_addr" type="array">
+      <obj_property name="ElementShortName">ar_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ar_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/w_strb" type="array">
+      <obj_property name="ElementShortName">w_strb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_strb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/r_data" type="array">
+      <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ARVALID" type="logic">
+      <obj_property name="ElementShortName">ARVALID</obj_property>
+      <obj_property name="ObjectShortName">ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ARADDR" type="array">
+      <obj_property name="ElementShortName">ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/ARREADY" type="logic">
+      <obj_property name="ElementShortName">ARREADY</obj_property>
+      <obj_property name="ObjectShortName">ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/RREADY" type="logic">
+      <obj_property name="ElementShortName">RREADY</obj_property>
+      <obj_property name="ObjectShortName">RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/RDATA" type="array">
+      <obj_property name="ElementShortName">RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/RVALID" type="logic">
+      <obj_property name="ElementShortName">RVALID</obj_property>
+      <obj_property name="ObjectShortName">RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_Memory/DUT_slave/slave_memory" type="array">
+      <obj_property name="ElementShortName">slave_memory[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">slave_memory[0:15][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

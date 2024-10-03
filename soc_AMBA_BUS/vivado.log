@@ -836,3 +836,10 @@ INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 Vivado Simulator 2019.2
 Time resolution is 1 ps
 relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1304.871 ; gain = 0.000
+save_wave_config {C:/github/amba_bus/soc_AMBA_BUS/tb_AXI_Memory_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/github/amba_bus/soc_AMBA_BUS/tb_AXI_Memory_behav.wcfg
+set_property xsim.view C:/github/amba_bus/soc_AMBA_BUS/tb_AXI_Memory_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 21:51:30 2024...
