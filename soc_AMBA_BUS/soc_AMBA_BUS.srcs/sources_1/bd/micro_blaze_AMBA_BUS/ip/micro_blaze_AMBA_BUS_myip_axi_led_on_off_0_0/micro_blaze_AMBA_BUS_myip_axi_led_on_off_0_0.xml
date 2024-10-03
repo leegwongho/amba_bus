@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>customized_ip</spirit:library>
-  <spirit:name>micro_blaze_AMBA_BUS_myip_axi_interface_0_0</spirit:name>
+  <spirit:name>micro_blaze_AMBA_BUS_myip_axi_led_on_off_0_0</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -388,7 +388,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -397,7 +397,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN"/>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -517,7 +517,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -526,7 +526,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN"/>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -570,27 +570,11 @@
   <spirit:model>
     <spirit:ports>
       <spirit:port>
-        <spirit:name>seg_7</spirit:name>
+        <spirit:name>led</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">7</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>com</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:left spirit:format="long">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -975,45 +959,55 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">micro_blaze_AMBA_BUS_myip_axi_interface_0_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">micro_blaze_AMBA_BUS_myip_axi_led_on_off_0_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>myip_axi_interface_v1.0</xilinx:displayName>
+      <xilinx:displayName>myip_axi_led_on_off_v1.0</xilinx:displayName>
       <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a438354_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b2eee0_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@46955ef2_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@512060e4_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa0709d_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@40208e4b_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@23947e64_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@bbb0971_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3930d1_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5536bcd0_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@53464b09_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c89b3ff_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@59b0ab7c_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@19e9d576_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@9be6849_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@623e94f8_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb9b371_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d1e04b_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5477cb2d_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ae12bc_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa8b035_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a36977b_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d8f21bd_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c87b72_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@600e29b3_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f1a1658_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7557828_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5309a1_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@742aa530_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ab79aa_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@36203639_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_interface_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@719c683a_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5592b272_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79f74f18_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2abf3128_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f89df4a_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@472c431a_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5072fbad_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc7ca75_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50cf964e_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13819667_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@173f98b8_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79700766_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51915bbb_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f976b80_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1db6d646_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f6e15b2_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@395555eb_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d36a303_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2103fe_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f45bcfd_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62a109b8_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52af20a7_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65de1016_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@765bd44b_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c1d269d_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c367968_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f1e20d_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e016c01_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32587445_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@599f92db_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a9f81fe_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b5580fb_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4612d380_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a26ee2e_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6164ab69_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f1edfbd_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cec010_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4491a6c9_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b8cf3cc_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@780b5fe4_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d5dde33_ARCHIVE_LOCATION">c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -1060,10 +1054,10 @@
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="20621278"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="638ad5e4"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="ada15962"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3efbeda5"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8672fb23"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="2e811c89"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3ea0dcec"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a5d07074"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
