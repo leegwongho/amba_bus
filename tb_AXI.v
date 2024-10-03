@@ -25,12 +25,25 @@ module tb_AXI_Memory ();
     integer        aw_addr;
     integer        w_data;
     reg        valid;
+    reg         valid_r;
+    integer     ar_addr;
     reg [3:0]        w_strb;
     wire        ready;
+    wire [31:0] r_data;
+
+    // AR channel
+    wire               ARVALID;
+    wire      [31:0]   ARADDR;
+    wire           ARREADY;
+
+    // R channel
+    wire               RREADY;
+    wire     [31:0]   RDATA;
+  //  output  reg         RLAST,  // 데이터 여러개 요청 구현할때 추가
+    wire         RVALID;
 
     // AXI_Master dut_master (.*);
     // AXI_Slave_Memory dut_slave (.*);
-
 
 
 
@@ -75,6 +88,12 @@ module tb_AXI_Memory ();
                             WVALID,
                             WSTRB,
                             WREADY,
+                            ARVALID,
+                            ARADDR,
+                            ARREADY,
+                            RREADY,
+                            RDATA,
+                            RVALID,
                             BREADY,
                             BRESP,
                             BVALID);
@@ -156,5 +175,14 @@ module tb_AXI_Memory ();
             valid   = 1'b0;
         end  // wait for ready signal
         
+        // 다섯 번째 트랜잭션
+
+        @(posedge ACLK);
+        valid_r = 1'b1;
+        ar_addr = 32'd0;
+
+        @(posedge ACLK);
+        valid_r = 1'b0;
+        @(posedge RVALID);
     end
 endmodule

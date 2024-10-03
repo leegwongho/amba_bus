@@ -21,7 +21,7 @@ module axi_slave(
 
     // R channel
     input               RREADY,
-    output     [31:0]   RDATA,
+    output  reg [31:0]  RDATA,
   //  output  reg         RLAST,  // 데이터 여러개 요청 구현할때 추가
     output  reg         RVALID,
 
@@ -103,6 +103,7 @@ module axi_slave(
             r_state_next = R_IDLE;
             rdata_reg_next = 0;
             RVALID = 1'b0;
+            RDATA = 0;
         end
         else begin
             case (r_state)
@@ -114,7 +115,10 @@ module axi_slave(
                 end
                 R_VALID : begin
                     RVALID = 1'b1;
-                    rdata_reg_next = slave_memory[ar_addr_reg];
+                    RDATA = slave_memory[ar_addr_reg];
+                    if (RVALID && RREADY) begin
+                        r_state_next = R_IDLE;
+                    end
                 end 
                 default: ;
             endcase

@@ -29,6 +29,7 @@ module axi_master(
   //  input               RLAST,   // 데이터 여러개 요청 구현할때 추가
     input               RVALID,
     output reg          RREADY,
+
     
     // user control master bit
     input               valid_r,
@@ -73,7 +74,7 @@ module axi_master(
                     ARVALID = 1'b0;
                     if (valid_r) begin
                         ar_addr_reg_next = ar_addr;
-                        ar_state = AR_VALID;
+                        ar_state_next = AR_VALID;
                     end
                 end 
                 AR_VALID : begin
