@@ -1069,3 +1069,4 @@ con
 ----------------End of Script----------------
 
 16:04:48 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_axi_test_led_app_system_standalone.tcl'
+22:06:59 INFO  : Disconnected from the channel tcfchan#25.
