@@ -1,0 +1,10 @@
+timestamp=[2024-10-04 15:02:11], mode=WORKBENCH_START, duration=0:00:09.009, duration_ms=9009, data={}
+timestamp=[2024-10-04 15:02:17], mode=WORKBENCH_UI_INIT, duration=0:00:05.581, duration_ms=5581, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-10-04 15:03:09], mode=APP_CREATION, duration=0:00:00.815, duration_ms=815, data={name=amba_bus_axi, project_type=sdk, os=custom, processor=ai_engine, runtime=C/C++, platform=xcvc1902_fixed, application_type=application}
+timestamp=[2024-10-04 15:04:33], mode=PLATFORM_CREATION, duration=0:00:04.798, duration_ms=4798, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-10-04 15:04:47], mode=PLATFORM_GENERATION, duration=0:00:09.922, duration_ms=9922, data={name=microblaze_axi_test_led_hw}
+timestamp=[2024-10-04 15:05:14], mode=APP_CREATION, duration=0:00:01.084, duration_ms=1084, data={name=microblaze_axi_test_led_app, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=microblaze_axi_test_led_hw, application_type=application}
+timestamp=[2024-10-04 15:34:26], mode=WORKBENCH_START, duration=0:00:09.713, duration_ms=9713, data={}
+timestamp=[2024-10-04 15:34:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.682, duration_ms=682, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,microblaze_axi_test_led_app,microblaze_axi_test_led_app_system,microblaze_axi_test_led_hw}
+timestamp=[2024-10-04 15:34:45], mode=PLATFORM_GENERATION, duration=0:00:11.419, duration_ms=11419, data={name=microblaze_axi_test_led_hw}
+timestamp=[2024-10-04 15:57:41], mode=PLATFORM_GENERATION, duration=0:00:01.982, duration_ms=1982, data={name=microblaze_axi_test_led_hw}
