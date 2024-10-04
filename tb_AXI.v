@@ -13,12 +13,13 @@ module tb_axi_master_slave();
     wire [3:0] WSTRB;
     wire [1:0] BRESP, RRESP;
     wire BVALID, RVALID;
+    wire ready;
     
     // axi slave
     wire AWREADY, WREADY, ARREADY;
     wire [31:0] RDATA;
     
-    axi_master2 master (
+    axi_master_DONG master (
         .ACLK(ACLK),
         .ARESET(ARESET),
         .AWREADY(AWREADY),
@@ -47,7 +48,7 @@ module tb_axi_master_slave();
         .ready()
     );
 
-    axi_slave2 slave (
+    axi_slave_DONG slave (
         .ACLK(ACLK),
         .ARESET(ARESET),
         .AWVALID(AWVALID),
@@ -142,7 +143,7 @@ module tb_axi_master_slave();
             w_data  = 32'h0;
             w_strb  = 4'b0000;          
             valid   = 1'b0;
-        end  // wait for ready signal
+        end  
         
     end
     
