@@ -5,6 +5,6 @@ Nov  6 2019
 C:/github/amba_bus/axi_master.v,1727959376,verilog,,C:/github/amba_bus/axi_slave.v,,axi_master,,,,,,,,
 C:/github/amba_bus/axi_master_fsm.v,1728045630,verilog,,C:/github/amba_bus/axi_slave_fsm.v,,axi_master_fsm,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
 C:/github/amba_bus/axi_slave.v,1727959671,verilog,,C:/github/amba_bus/tb_AXI.v,,axi_slave,,,,,,,,
-C:/github/amba_bus/axi_slave_fsm.v,1728045815,verilog,,C:/github/amba_bus/tb_AXI.v,,axi_slave_fsm,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
+C:/github/amba_bus/axi_slave_fsm.v,1728046887,verilog,,C:/github/amba_bus/tb_AXI.v,,axi_slave_fsm,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
 C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
 C:/github/amba_bus/tb_AXI.v,1728045671,verilog,,,,tb_AXI_Memory,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,

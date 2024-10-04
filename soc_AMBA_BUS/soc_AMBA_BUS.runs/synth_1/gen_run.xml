@@ -68,14 +68,14 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_ilmb_bram_if_cntlr_0"/>

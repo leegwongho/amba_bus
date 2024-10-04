@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Oct  4 22:06:22 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Oct  4 22:10:36 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2708876" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "daa05d36-df11-486c-83e7-eac721170a0a" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "7dab8022e4904f2da09bcfd16653799a" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "278" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "280" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 5 8645HS w/ Radeon 760M Graphics" -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7628_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2826627766 -regid "" -xml C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7604_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2852705734 -regid "" -xml C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/xsim.dir/tb_AXI_Memory_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
