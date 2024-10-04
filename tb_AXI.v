@@ -80,57 +80,70 @@ module tb_axi_master_slave();
     
     initial begin
         ACLK = 1'b1;
-        ARESET = 1'b0;
-        #20 ARESET = 1'b1;
+        ARESET = 1'b1;
        
         @(posedge ACLK) begin
         aw_addr = 32'd0; 
-        w_data  = 32'h12345678;
-        w_strb  = 4'b0001; 
+        w_data  = 32'h0;
+        w_strb  = 4'b0000; 
         valid   = 1'b1;
         
         @(posedge ACLK);
         valid = 1'b0;
-        wait(BVALID); // BVALID 신호 대기
-        @(posedge ACLK);
-        if (BRESP == 2'b00) begin
-            $display("쓰기 성공: 주소 = %h, 데이터 = %h", aw_addr, w_data);
-        end else begin
-            $display("쓰기 실패: 주소 = %h, 데이터 = %h", aw_addr, w_data);
-        end
 
+        @(posedge  ready);
+        aw_addr = 32'd0; 
+        w_data  = 32'h10;
+        w_strb  = 4'b0; 
+        valid   = 1'b0;
+        
         @(posedge ACLK);
         aw_addr = 32'd1; 
         w_data  = 32'h12345678;
         w_strb  = 4'b0011; 
         valid   = 1'b1;
-        
-        @(posedge ACLK);
-        valid = 1'b0; 
-        wait(BVALID); 
-        
-        @(posedge ACLK);
-        aw_addr = 32'd3; 
-        w_data  = 32'h12345678;
-        w_strb  = 4'b1101; 
-        valid   = 1'b1;
-        
+        #1
+
+            
         @(posedge ACLK);
         valid = 1'b0;
-        wait(BVALID); 
         
+        @(posedge ready);
+        aw_addr = 32'd0; 
+        w_data  = 32'h0;
+        w_strb  = 4'b0000; 
+        valid   = 1'b0;
+
         @(posedge ACLK);
-        aw_addr = 32'd7; 
+        aw_addr = 32'd3;                
         w_data  = 32'h12345678;
-        w_strb  = 4'b1111; 
+        w_strb  = 4'b1101;              
         valid   = 1'b1;
 
         @(posedge ACLK);
-        valid = 1'b0; 
-        wait(BVALID); 
+        valid = 1'b0;
+        @(posedge ready)begin
+            aw_addr = 32'd0;            
+            w_data  = 32'h0;
+            w_strb  = 4'b0000;          
+            valid   = 1'b0;
+        end 
         
-        #100;
-        $finish;
+         @(posedge ACLK);
+        aw_addr = 32'd7;               
+        w_data  = 32'h12345678;
+        w_strb  = 4'b1111;           
+        valid   = 1'b1;
+
+        @(posedge ACLK);
+        valid = 1'b0;
+        @(posedge ready)begin
+            aw_addr = 32'd0;            
+            w_data  = 32'h0;
+            w_strb  = 4'b0000;          
+            valid   = 1'b0;
+        end  // wait for ready signal
+        
     end
     
 endmodule
