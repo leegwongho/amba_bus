@@ -1264,3 +1264,1138 @@ con
 ----------------End of Script----------------
 
 17:08:50 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:24:14 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:24:17 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:24:25 INFO  : Disconnected from the channel tcfchan#7.
+17:24:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:25 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:24:25 INFO  : 'jtag frequency' command is executed.
+17:24:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:24:26 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:24:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:24:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:26 INFO  : System reset is completed.
+17:24:29 INFO  : 'after 3000' command is executed.
+17:24:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:29 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:24:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:24:29 INFO  : Memory regions updated for context MicroBlaze #0
+17:24:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:24:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:29 INFO  : 'con' command is executed.
+17:24:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:24:29 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:24:50 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:24:52 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:25:10 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:25:12 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:25:22 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:25:24 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:25:39 INFO  : Disconnected from the channel tcfchan#8.
+17:25:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:40 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:25:40 INFO  : 'jtag frequency' command is executed.
+17:25:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:25:40 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:25:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:25:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:40 INFO  : System reset is completed.
+17:25:43 INFO  : 'after 3000' command is executed.
+17:25:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:43 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:25:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:25:43 INFO  : Memory regions updated for context MicroBlaze #0
+17:25:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:25:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:25:43 INFO  : 'con' command is executed.
+17:25:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:25:43 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:25:54 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:25:56 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:26:01 INFO  : Disconnected from the channel tcfchan#9.
+17:26:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:01 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:26:01 INFO  : 'jtag frequency' command is executed.
+17:26:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:26:02 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:26:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:26:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:02 INFO  : System reset is completed.
+17:26:05 INFO  : 'after 3000' command is executed.
+17:26:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:05 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:26:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:26:05 INFO  : Memory regions updated for context MicroBlaze #0
+17:26:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:26:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:05 INFO  : 'con' command is executed.
+17:26:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:26:05 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:26:48 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:26:50 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:26:56 INFO  : Disconnected from the channel tcfchan#10.
+17:26:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:56 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:26:56 INFO  : 'jtag frequency' command is executed.
+17:26:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:26:56 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:26:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:26:56 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:56 INFO  : System reset is completed.
+17:26:59 INFO  : 'after 3000' command is executed.
+17:26:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:00 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:27:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:27:00 INFO  : Memory regions updated for context MicroBlaze #0
+17:27:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:27:00 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:00 INFO  : 'con' command is executed.
+17:27:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:27:00 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:27:25 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:27:27 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:27:33 INFO  : Disconnected from the channel tcfchan#11.
+17:27:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:33 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:27:33 INFO  : 'jtag frequency' command is executed.
+17:27:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:27:33 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:27:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:27:34 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:34 INFO  : System reset is completed.
+17:27:37 INFO  : 'after 3000' command is executed.
+17:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:37 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:27:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:27:37 INFO  : Memory regions updated for context MicroBlaze #0
+17:27:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:37 INFO  : 'con' command is executed.
+17:27:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:27:37 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:28:00 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:28:01 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:28:07 INFO  : Disconnected from the channel tcfchan#12.
+17:28:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:08 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:28:08 INFO  : 'jtag frequency' command is executed.
+17:28:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:28:08 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:28:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:28:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:08 INFO  : System reset is completed.
+17:28:11 INFO  : 'after 3000' command is executed.
+17:28:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:11 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:28:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:28:11 INFO  : Memory regions updated for context MicroBlaze #0
+17:28:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:28:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:11 INFO  : 'con' command is executed.
+17:28:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:28:11 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:28:28 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:28:30 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:28:35 INFO  : Disconnected from the channel tcfchan#13.
+17:28:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:35 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:28:35 INFO  : 'jtag frequency' command is executed.
+17:28:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:28:36 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:28:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:28:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:36 INFO  : System reset is completed.
+17:28:39 INFO  : 'after 3000' command is executed.
+17:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:39 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:28:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:28:39 INFO  : Memory regions updated for context MicroBlaze #0
+17:28:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:28:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:39 INFO  : 'con' command is executed.
+17:28:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:28:39 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:29:18 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:29:20 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:29:25 INFO  : Disconnected from the channel tcfchan#14.
+17:29:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:26 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:29:26 INFO  : 'jtag frequency' command is executed.
+17:29:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:29:26 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:29:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:29:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:29:26 INFO  : System reset is completed.
+17:29:29 INFO  : 'after 3000' command is executed.
+17:29:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:29:29 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:29:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:29:29 INFO  : Memory regions updated for context MicroBlaze #0
+17:29:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:29:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:29:29 INFO  : 'con' command is executed.
+17:29:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:29:29 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:29:47 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:29:49 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:30:00 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:30:02 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:30:07 INFO  : Disconnected from the channel tcfchan#15.
+17:30:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:07 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:30:07 INFO  : 'jtag frequency' command is executed.
+17:30:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:30:08 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:30:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:30:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:08 INFO  : System reset is completed.
+17:30:11 INFO  : 'after 3000' command is executed.
+17:30:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:11 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:30:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:30:11 INFO  : Memory regions updated for context MicroBlaze #0
+17:30:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:30:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:11 INFO  : 'con' command is executed.
+17:30:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:30:11 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:30:15 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:30:17 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:30:24 INFO  : Disconnected from the channel tcfchan#16.
+17:30:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:24 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:30:24 INFO  : 'jtag frequency' command is executed.
+17:30:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:30:25 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:30:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:30:25 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:25 INFO  : System reset is completed.
+17:30:28 INFO  : 'after 3000' command is executed.
+17:30:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:28 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:30:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:30:28 INFO  : Memory regions updated for context MicroBlaze #0
+17:30:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:30:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:28 INFO  : 'con' command is executed.
+17:30:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:30:28 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:30:53 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:30:54 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:31:00 INFO  : Disconnected from the channel tcfchan#17.
+17:31:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:00 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:31:00 INFO  : 'jtag frequency' command is executed.
+17:31:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:31:00 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:31:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:31:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:01 INFO  : System reset is completed.
+17:31:04 INFO  : 'after 3000' command is executed.
+17:31:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:04 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:31:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:31:04 INFO  : Memory regions updated for context MicroBlaze #0
+17:31:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:31:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:04 INFO  : 'con' command is executed.
+17:31:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:31:04 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:31:32 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:31:34 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:31:44 INFO  : Disconnected from the channel tcfchan#18.
+17:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:45 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:31:45 INFO  : 'jtag frequency' command is executed.
+17:31:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:31:45 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:31:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:31:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:45 INFO  : System reset is completed.
+17:31:48 INFO  : 'after 3000' command is executed.
+17:31:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:48 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:31:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:31:48 INFO  : Memory regions updated for context MicroBlaze #0
+17:31:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:31:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:31:48 INFO  : 'con' command is executed.
+17:31:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:31:48 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:32:08 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:32:10 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:32:16 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:32:18 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:32:26 INFO  : Disconnected from the channel tcfchan#19.
+17:32:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:26 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:32:26 INFO  : 'jtag frequency' command is executed.
+17:32:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:32:26 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:32:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:32:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:26 INFO  : System reset is completed.
+17:32:29 INFO  : 'after 3000' command is executed.
+17:32:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:29 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:32:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:32:30 INFO  : Memory regions updated for context MicroBlaze #0
+17:32:30 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:32:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:30 INFO  : 'con' command is executed.
+17:32:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:32:30 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:32:41 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:32:43 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:32:54 INFO  : Disconnected from the channel tcfchan#20.
+17:32:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:55 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:32:55 INFO  : 'jtag frequency' command is executed.
+17:32:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:32:55 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:32:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:32:55 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:55 INFO  : System reset is completed.
+17:32:58 INFO  : 'after 3000' command is executed.
+17:32:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:58 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:32:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:32:58 INFO  : Memory regions updated for context MicroBlaze #0
+17:32:58 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:32:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:32:58 INFO  : 'con' command is executed.
+17:32:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:32:58 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:33:31 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:33:33 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:33:38 INFO  : Disconnected from the channel tcfchan#21.
+17:33:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:38 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:33:38 INFO  : 'jtag frequency' command is executed.
+17:33:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:33:39 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:33:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:33:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:33:39 INFO  : System reset is completed.
+17:33:42 INFO  : 'after 3000' command is executed.
+17:33:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:33:42 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:33:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:33:42 INFO  : Memory regions updated for context MicroBlaze #0
+17:33:42 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:33:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:33:42 INFO  : 'con' command is executed.
+17:33:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:33:42 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:34:05 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:34:07 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:34:12 INFO  : Disconnected from the channel tcfchan#22.
+17:34:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:13 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:34:13 INFO  : 'jtag frequency' command is executed.
+17:34:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:34:13 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:34:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:34:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:13 INFO  : System reset is completed.
+17:34:16 INFO  : 'after 3000' command is executed.
+17:34:16 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:16 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:34:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:34:16 INFO  : Memory regions updated for context MicroBlaze #0
+17:34:16 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:34:16 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:16 INFO  : 'con' command is executed.
+17:34:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:34:16 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:35:54 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:35:56 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:36:05 INFO  : Disconnected from the channel tcfchan#23.
+17:36:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:05 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:36:05 INFO  : 'jtag frequency' command is executed.
+17:36:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:36:06 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:36:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:36:06 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:06 INFO  : System reset is completed.
+17:36:09 INFO  : 'after 3000' command is executed.
+17:36:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:09 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:36:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:36:09 INFO  : Memory regions updated for context MicroBlaze #0
+17:36:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:36:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:09 INFO  : 'con' command is executed.
+17:36:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:36:09 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:36:27 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:36:29 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:36:38 INFO  : Disconnected from the channel tcfchan#24.
+17:36:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:38 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:36:38 INFO  : 'jtag frequency' command is executed.
+17:36:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:36:38 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:36:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:38 INFO  : System reset is completed.
+17:36:41 INFO  : 'after 3000' command is executed.
+17:36:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:42 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:36:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:36:42 INFO  : Memory regions updated for context MicroBlaze #0
+17:36:42 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:36:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:42 INFO  : 'con' command is executed.
+17:36:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:36:42 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:37:14 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:37:16 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:37:22 INFO  : Disconnected from the channel tcfchan#25.
+17:37:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:22 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:37:22 INFO  : 'jtag frequency' command is executed.
+17:37:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:37:23 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:37:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:23 INFO  : System reset is completed.
+17:37:26 INFO  : 'after 3000' command is executed.
+17:37:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:26 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:37:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:37:26 INFO  : Memory regions updated for context MicroBlaze #0
+17:37:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:37:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:26 INFO  : 'con' command is executed.
+17:37:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:37:26 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:37:43 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:37:45 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:37:50 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:37:51 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:37:56 INFO  : Disconnected from the channel tcfchan#26.
+17:37:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:56 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:37:56 INFO  : 'jtag frequency' command is executed.
+17:37:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:37:56 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:37:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:56 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:56 INFO  : System reset is completed.
+17:37:59 INFO  : 'after 3000' command is executed.
+17:37:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:59 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:37:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:37:59 INFO  : Memory regions updated for context MicroBlaze #0
+17:37:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:37:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:59 INFO  : 'con' command is executed.
+17:37:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:37:59 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:38:15 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:38:17 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:38:35 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:38:37 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:38:44 INFO  : Disconnected from the channel tcfchan#27.
+17:38:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:44 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:38:44 INFO  : 'jtag frequency' command is executed.
+17:38:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:38:45 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:38:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:38:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:45 INFO  : System reset is completed.
+17:38:48 INFO  : 'after 3000' command is executed.
+17:38:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:48 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:38:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:38:48 INFO  : Memory regions updated for context MicroBlaze #0
+17:38:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:38:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:48 INFO  : 'con' command is executed.
+17:38:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:38:48 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:40:17 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:40:19 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:40:24 INFO  : Disconnected from the channel tcfchan#28.
+17:40:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:40:24 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:40:24 INFO  : 'jtag frequency' command is executed.
+17:40:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:40:25 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:40:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:25 INFO  : System reset is completed.
+17:40:28 INFO  : 'after 3000' command is executed.
+17:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:28 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:40:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:40:28 INFO  : Memory regions updated for context MicroBlaze #0
+17:40:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:28 INFO  : 'con' command is executed.
+17:40:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:40:28 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:42:14 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:42:16 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:42:27 INFO  : Disconnected from the channel tcfchan#29.
+17:42:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:27 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:42:27 INFO  : 'jtag frequency' command is executed.
+17:42:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:42:27 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:42:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:42:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:27 INFO  : System reset is completed.
+17:42:30 INFO  : 'after 3000' command is executed.
+17:42:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:30 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:42:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:42:30 INFO  : Memory regions updated for context MicroBlaze #0
+17:42:30 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:42:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:30 INFO  : 'con' command is executed.
+17:42:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:42:30 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:43:08 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:43:11 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:43:17 INFO  : Disconnected from the channel tcfchan#30.
+17:43:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:17 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:43:17 INFO  : 'jtag frequency' command is executed.
+17:43:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:43:17 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:43:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:43:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:43:17 INFO  : System reset is completed.
+17:43:20 INFO  : 'after 3000' command is executed.
+17:43:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:43:21 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:43:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:43:21 INFO  : Memory regions updated for context MicroBlaze #0
+17:43:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:43:21 INFO  : Context for processor 'microblaze_0' is selected.
+17:43:21 INFO  : 'con' command is executed.
+17:43:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:43:21 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:43:58 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:44:00 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:44:05 INFO  : Disconnected from the channel tcfchan#31.
+17:44:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:05 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:44:05 INFO  : 'jtag frequency' command is executed.
+17:44:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:44:05 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:44:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:44:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:44:05 INFO  : System reset is completed.
+17:44:08 INFO  : 'after 3000' command is executed.
+17:44:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:44:08 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:44:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:44:09 INFO  : Memory regions updated for context MicroBlaze #0
+17:44:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:44:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:44:09 INFO  : 'con' command is executed.
+17:44:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:44:09 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:47:16 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:47:18 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:47:29 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:47:31 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:47:35 INFO  : Disconnected from the channel tcfchan#32.
+17:47:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:35 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:47:35 INFO  : 'jtag frequency' command is executed.
+17:47:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:47:36 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:47:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:47:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:47:36 INFO  : System reset is completed.
+17:47:39 INFO  : 'after 3000' command is executed.
+17:47:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:47:39 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:47:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:47:39 INFO  : Memory regions updated for context MicroBlaze #0
+17:47:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:47:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:47:39 INFO  : 'con' command is executed.
+17:47:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:47:39 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:47:52 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:47:53 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:47:58 INFO  : Disconnected from the channel tcfchan#33.
+17:47:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:59 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:47:59 INFO  : 'jtag frequency' command is executed.
+17:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:47:59 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:47:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:47:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:47:59 INFO  : System reset is completed.
+17:48:02 INFO  : 'after 3000' command is executed.
+17:48:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:02 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:48:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:48:02 INFO  : Memory regions updated for context MicroBlaze #0
+17:48:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:48:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:02 INFO  : 'con' command is executed.
+17:48:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:48:02 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:48:22 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:48:24 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:48:36 INFO  : Disconnected from the channel tcfchan#34.
+17:48:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:36 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:48:36 INFO  : 'jtag frequency' command is executed.
+17:48:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:48:37 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:48:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:48:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:37 INFO  : System reset is completed.
+17:48:40 INFO  : 'after 3000' command is executed.
+17:48:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:40 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:48:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:48:40 INFO  : Memory regions updated for context MicroBlaze #0
+17:48:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:48:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:40 INFO  : 'con' command is executed.
+17:48:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:48:40 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+17:48:48 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+17:48:50 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+17:48:55 INFO  : Disconnected from the channel tcfchan#35.
+17:48:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:55 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+17:48:55 INFO  : 'jtag frequency' command is executed.
+17:48:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+17:48:55 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+17:48:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:48:55 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:55 INFO  : System reset is completed.
+17:48:58 INFO  : 'after 3000' command is executed.
+17:48:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:58 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+17:48:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+17:48:59 INFO  : Memory regions updated for context MicroBlaze #0
+17:48:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:48:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:48:59 INFO  : 'con' command is executed.
+17:48:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:48:59 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+18:13:52 INFO  : Hardware specification for platform project 'microblaze_axi_led_test_hw' is updated.
+18:14:07 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+18:14:08 INFO  : The hardware specfication used by project 'microblaze_aix_led_test_app' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:14:08 INFO  : The file 'C:\github\amba_bus\microblaze_aix_led_test_app\_ide\bitstream\micro_blaze_AMBA_BUS_wrapper.bit' stored in project is removed.
+18:14:08 INFO  : The file 'C:\github\amba_bus\microblaze_aix_led_test_app\_ide\bitstream\micro_blaze_AMBA_BUS_wrapper.mmi' stored in project is removed.
+18:14:08 INFO  : The updated bitstream files are copied from platform to folder 'C:\github\amba_bus\microblaze_aix_led_test_app\_ide\bitstream' in project 'microblaze_aix_led_test_app'.
+18:14:14 INFO  : Disconnected from the channel tcfchan#36.
+18:14:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:15 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+18:14:15 INFO  : 'jtag frequency' command is executed.
+18:14:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+18:14:15 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+18:14:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:14:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:14:15 INFO  : System reset is completed.
+18:14:18 INFO  : 'after 3000' command is executed.
+18:14:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:14:18 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+18:14:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+18:14:18 INFO  : Memory regions updated for context MicroBlaze #0
+18:14:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:14:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:14:18 INFO  : 'con' command is executed.
+18:14:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:14:18 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+18:15:02 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_aix_led_test_app'...
+18:15:05 INFO  : Checking for BSP changes to sync application flags for project 'microblaze_axi_test_led_app'...
+18:15:11 INFO  : Disconnected from the channel tcfchan#38.
+18:15:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:11 INFO  : Jtag cable 'Digilent Basys3 210183BCBAE8A' is selected.
+18:15:11 INFO  : 'jtag frequency' command is executed.
+18:15:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0' command is executed.
+18:15:12 INFO  : FPGA configured successfully with bitstream "C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit"
+18:15:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:15:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:15:12 INFO  : System reset is completed.
+18:15:15 INFO  : 'after 3000' command is executed.
+18:15:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:15:15 INFO  : The application 'C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf' is downloaded to processor 'microblaze_0'.
+18:15:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BCBAE8A" && level==0} -index 0
+fpga -file C:/github/amba_bus/microblaze_aix_led_test_app/_ide/bitstream/micro_blaze_AMBA_BUS_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/github/amba_bus/microblaze_aix_led_test_app/Debug/microblaze_aix_led_test_app.elf
+----------------End of Script----------------
+
+18:15:15 INFO  : Memory regions updated for context MicroBlaze #0
+18:15:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+18:15:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:15:15 INFO  : 'con' command is executed.
+18:15:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:15:15 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_aix_led_test_app_system_standalone.tcl'
+18:15:46 INFO  : Disconnected from the channel tcfchan#39.

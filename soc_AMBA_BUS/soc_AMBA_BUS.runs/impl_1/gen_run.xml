@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728104153">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728119277">
   <File Type="BITSTR-BMM" Name="micro_blaze_AMBA_BUS_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="micro_blaze_AMBA_BUS_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_init.rpt"/>
@@ -116,6 +116,14 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../axi_slave_fsm.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_top.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

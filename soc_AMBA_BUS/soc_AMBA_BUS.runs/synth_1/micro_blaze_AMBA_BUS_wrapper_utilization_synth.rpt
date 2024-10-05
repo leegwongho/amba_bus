@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Oct  5 13:58:43 2024
+| Date         : Sat Oct  5 18:11:05 2024
 | Host         : leegwongho running 64-bit major release  (build 9200)
 | Command      : report_utilization -file micro_blaze_AMBA_BUS_wrapper_utilization_synth.rpt -pb micro_blaze_AMBA_BUS_wrapper_utilization_synth.pb
 | Design       : micro_blaze_AMBA_BUS_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3290 |     0 |     20800 | 15.82 |
-|   LUT as Logic             | 3048 |     0 |     20800 | 14.65 |
+| Slice LUTs*                | 3292 |     0 |     20800 | 15.83 |
+|   LUT as Logic             | 3050 |     0 |     20800 | 14.66 |
 |   LUT as Memory            |  242 |     0 |      9600 |  2.52 |
 |     LUT as Distributed RAM |  128 |     0 |           |       |
 |     LUT as Shift Register  |  114 |     0 |           |       |
@@ -154,10 +154,10 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       | 2562 |        Flop & Latch |
-| LUT6       | 1877 |                 LUT |
-| LUT5       |  656 |                 LUT |
-| LUT4       |  448 |                 LUT |
-| LUT3       |  293 |                 LUT |
+| LUT6       | 1882 |                 LUT |
+| LUT5       |  652 |                 LUT |
+| LUT4       |  450 |                 LUT |
+| LUT3       |  292 |                 LUT |
 | FDCE       |  243 |        Flop & Latch |
 | LUT2       |  160 |                 LUT |
 | RAMD32     |  128 |  Distributed Memory |

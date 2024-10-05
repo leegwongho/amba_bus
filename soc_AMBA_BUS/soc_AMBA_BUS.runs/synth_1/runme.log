@@ -10,6 +10,7 @@
 
 source micro_blaze_AMBA_BUS_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/github/amba_bus/ip_repo/myip_input_sw_output_led_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/github/amba_bus/ip_repo/myip_axi_test_led_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/github/amba_bus/ip_repo/myip_axi_interface_1.0'.
@@ -20,9 +21,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22092 
+INFO: Helper process launched with PID 23560 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1241.789 ; gain = 225.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1240.160 ; gain = 226.602
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'micro_blaze_AMBA_BUS_wrapper' [C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/hdl/micro_blaze_AMBA_BUS_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'micro_blaze_AMBA_BUS' [C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/synth/micro_blaze_AMBA_BUS.v:437]
@@ -1181,18 +1182,18 @@ INFO: [Synth 8-256] done synthesizing module 'micro_blaze_AMBA_BUS_lmb_bram_0' (
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'micro_blaze_AMBA_BUS_lmb_bram_0' has 16 connections declared, but only 14 given [C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/synth/micro_blaze_AMBA_BUS.v:1598]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_17X2WBD' (128#1) [C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/synth/micro_blaze_AMBA_BUS.v:1381]
 INFO: [Synth 8-6157] synthesizing module 'micro_blaze_AMBA_BUS_myip_axi_test_led_0_0' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0/synth/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'myip_axi_test_led_v1_0' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'myip_axi_test_led_v1_0' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'myip_axi_test_led_v1_0_S00_AXI' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'myip_axi_test_led_v1_0_S00_AXI' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v:240]
-INFO: [Synth 8-226] default block is never used [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v:413]
-INFO: [Synth 8-6157] synthesizing module 'tb_AXI_top' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_top.v:2]
-INFO: [Synth 8-6157] synthesizing module 'axi_master_fsm' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_master_fsm.v:1]
+INFO: [Synth 8-226] default block is never used [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v:240]
+INFO: [Synth 8-226] default block is never used [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v:413]
+INFO: [Synth 8-6157] synthesizing module 'tb_AXI_top' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'axi_master_fsm' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_master_fsm.v:1]
 	Parameter IDLE bound to: 9'b000000001 
 	Parameter STATE_ARADDR bound to: 9'b000000010 
 	Parameter STATE_AWADDR bound to: 9'b000000100 
@@ -1202,24 +1203,24 @@ INFO: [Synth 8-6157] synthesizing module 'axi_master_fsm' [c:/github/amba_bus/so
 	Parameter STATE_WRITE bound to: 9'b001000000 
 	Parameter STATE_READ_COMPLETE bound to: 9'b010000000 
 	Parameter STATE_WRITE_COMPLETE bound to: 9'b100000000 
-WARNING: [Synth 8-3848] Net M_BREADY in module/entity axi_master_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_master_fsm.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'axi_master_fsm' (129#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_master_fsm.v:1]
-WARNING: [Synth 8-7023] instance 'DUT_master' of module 'axi_master_fsm' has 27 connections declared, but only 24 given [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_top.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_slave_fsm' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_slave_fsm.v:1]
+WARNING: [Synth 8-3848] Net M_BREADY in module/entity axi_master_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_master_fsm.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'axi_master_fsm' (129#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_master_fsm.v:1]
+WARNING: [Synth 8-7023] instance 'DUT_master' of module 'axi_master_fsm' has 27 connections declared, but only 24 given [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_slave_fsm' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_slave_fsm.v:1]
 	Parameter IDLE bound to: 9'b000000001 
 	Parameter STATE_ARADDR bound to: 9'b000000010 
 	Parameter STATE_AWADDR bound to: 9'b000000100 
 	Parameter STATE_WRITE_READY bound to: 9'b000010000 
 	Parameter STATE_READ bound to: 9'b000100000 
 	Parameter STATE_WRITE bound to: 9'b001000000 
-WARNING: [Synth 8-3848] Net S_BRESP in module/entity axi_slave_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_slave_fsm.v:18]
-WARNING: [Synth 8-3848] Net S_BVALID in module/entity axi_slave_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_slave_fsm.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'axi_slave_fsm' (130#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_slave_fsm.v:1]
-WARNING: [Synth 8-7023] instance 'DUT_slave' of module 'axi_slave_fsm' has 20 connections declared, but only 17 given [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_top.v:96]
-INFO: [Synth 8-6155] done synthesizing module 'tb_AXI_top' (131#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_top.v:2]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v:234]
-INFO: [Synth 8-6155] done synthesizing module 'myip_axi_test_led_v1_0_S00_AXI' (132#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'myip_axi_test_led_v1_0' (133#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0.v:4]
+WARNING: [Synth 8-3848] Net S_BRESP in module/entity axi_slave_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_slave_fsm.v:18]
+WARNING: [Synth 8-3848] Net S_BVALID in module/entity axi_slave_fsm does not have driver. [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_slave_fsm.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'axi_slave_fsm' (130#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_slave_fsm.v:1]
+WARNING: [Synth 8-7023] instance 'DUT_slave' of module 'axi_slave_fsm' has 20 connections declared, but only 17 given [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_top.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'tb_AXI_top' (131#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_top.v:2]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'myip_axi_test_led_v1_0_S00_AXI' (132#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myip_axi_test_led_v1_0' (133#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'micro_blaze_AMBA_BUS_myip_axi_test_led_0_0' (134#1) [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0/synth/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0/synth/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -1409,7 +1410,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized23 has unc
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized23 has unconnected port INJECTDBITERR
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:56 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1422,12 +1423,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:53 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:53 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.464 . Memory (MB): peak = 1687.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.478 . Memory (MB): peak = 1687.125 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 596 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1471,7 +1472,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/micro_blaze_AMBA_BUS_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1687.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1687.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 460 instances were transformed.
   FD => FDRE: 32 instances
@@ -1487,16 +1488,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1687.027 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 1687.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:01:06 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:01:11 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:01:06 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:01:11 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1523,7 +1524,7 @@ Applied set_property DONT_TOUCH = true for micro_blaze_AMBA_BUS_i/microblaze_0_a
 Applied set_property DONT_TOUCH = true for micro_blaze_AMBA_BUS_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for micro_blaze_AMBA_BUS_i/myip_axi_test_led_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:01:06 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:01:11 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
@@ -1562,7 +1563,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'a
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'axi_slave_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1628,7 +1629,7 @@ Detailed RTL Component Info :
 	   3 Input      1 Bit        Muxes := 3     
 	   8 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 5     
-	   6 Input      1 Bit        Muxes := 45    
+	   6 Input      1 Bit        Muxes := 46    
 	   5 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -2242,7 +2243,7 @@ Detailed RTL Component Info :
 	   6 Input      9 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 6     
 	   6 Input      4 Bit        Muxes := 2     
-	   6 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 11    
 Module axi_slave_fsm 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -2521,7 +2522,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/G
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:56 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:02:06 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2535,13 +2536,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'micro_blaze_AMBA_BUS_i/microblaze_0/U0/Reset' to pin 'micro_blaze_AMBA_BUS_i/rst_clk_wiz_0_100M/U0/FDRE_inst/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:02:06 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:02:19 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:02:12 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:02:25 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2553,7 +2554,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:02:15 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:02:29 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2579,13 +2580,13 @@ INFO: [Synth 8-6064] Net \inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:02:19 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:02:34 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:02:19 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:02:34 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2604,25 +2605,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:02:20 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:02:36 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:02:20 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:02:36 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:02:36 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:02:36 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2672,10 +2673,10 @@ Report Cell Usage:
 |5     |DSP48E1_2  |     1|
 |6     |LUT1       |    17|
 |7     |LUT2       |   158|
-|8     |LUT3       |   293|
-|9     |LUT4       |   448|
-|10    |LUT5       |   511|
-|11    |LUT6       |  1732|
+|8     |LUT3       |   292|
+|9     |LUT4       |   450|
+|10    |LUT5       |   507|
+|11    |LUT6       |  1737|
 |12    |LUT6_2     |   145|
 |13    |MMCME2_ADV |     1|
 |14    |MULT_AND   |     2|
@@ -2705,8 +2706,8 @@ Report Instance Areas:
 +------+-------------------------------------------------------------------------------------------------------+------------------------------------------------+------+
 |      |Instance                                                                                               |Module                                          |Cells |
 +------+-------------------------------------------------------------------------------------------------------+------------------------------------------------+------+
-|1     |top                                                                                                    |                                                |  6705|
-|2     |  micro_blaze_AMBA_BUS_i                                                                               |micro_blaze_AMBA_BUS                            |  6686|
+|1     |top                                                                                                    |                                                |  6707|
+|2     |  micro_blaze_AMBA_BUS_i                                                                               |micro_blaze_AMBA_BUS                            |  6688|
 |3     |    axi_uartlite_0                                                                                     |micro_blaze_AMBA_BUS_axi_uartlite_0_0           |   252|
 |4     |      U0                                                                                               |axi_uartlite                                    |   252|
 |5     |        AXI_LITE_IPIF_I                                                                                |axi_lite_ipif                                   |    70|
@@ -3889,12 +3890,12 @@ Report Instance Areas:
 |1182  |            reg_slice_r                                                                                |axi_register_slice_v2_1_20_axic_register_slice  |   146|
 |1183  |            splitter_ar                                                                                |axi_crossbar_v2_1_21_splitter__parameterized0   |     4|
 |1184  |            splitter_aw                                                                                |axi_crossbar_v2_1_21_splitter                   |     8|
-|1185  |    myip_axi_test_led_0                                                                                |micro_blaze_AMBA_BUS_myip_axi_test_led_0_0      |  3016|
-|1186  |      inst                                                                                             |myip_axi_test_led_v1_0                          |  3016|
-|1187  |        myip_axi_test_led_v1_0_S00_AXI_inst                                                            |myip_axi_test_led_v1_0_S00_AXI                  |  3016|
-|1188  |          DUT_AXI                                                                                      |tb_AXI_top                                      |  2674|
+|1185  |    myip_axi_test_led_0                                                                                |micro_blaze_AMBA_BUS_myip_axi_test_led_0_0      |  3018|
+|1186  |      inst                                                                                             |myip_axi_test_led_v1_0                          |  3018|
+|1187  |        myip_axi_test_led_v1_0_S00_AXI_inst                                                            |myip_axi_test_led_v1_0_S00_AXI                  |  3018|
+|1188  |          DUT_AXI                                                                                      |tb_AXI_top                                      |  2676|
 |1189  |            DUT_master                                                                                 |axi_master_fsm                                  |   538|
-|1190  |            DUT_slave                                                                                  |axi_slave_fsm                                   |  2134|
+|1190  |            DUT_slave                                                                                  |axi_slave_fsm                                   |  2136|
 |1191  |    rst_clk_wiz_0_100M                                                                                 |micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0       |    66|
 |1192  |      U0                                                                                               |proc_sys_reset                                  |    66|
 |1193  |        EXT_LPF                                                                                        |lpf                                             |    23|
@@ -3982,18 +3983,18 @@ Report Instance Areas:
 |1275  |                  \prim_noinit.ram                                                                     |blk_mem_gen_prim_wrapper__parameterized8        |     1|
 +------+-------------------------------------------------------------------------------------------------------+------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:02:36 . Memory (MB): peak = 1687.125 ; gain = 673.566
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14309 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:02:13 . Memory (MB): peak = 1687.027 ; gain = 671.012
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1687.027 ; gain = 671.012
+Synthesis finished with 0 errors, 0 critical warnings and 14176 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:02:28 . Memory (MB): peak = 1687.125 ; gain = 673.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:02:37 . Memory (MB): peak = 1687.125 ; gain = 673.566
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.261 . Memory (MB): peak = 1687.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.365 . Memory (MB): peak = 1687.125 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 614 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1687.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1687.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 363 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 35 instances
@@ -4009,12 +4010,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-485 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+486 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:02:30 . Memory (MB): peak = 1687.027 ; gain = 946.980
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1687.027 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:02:47 . Memory (MB): peak = 1687.125 ; gain = 950.199
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1687.125 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.runs/synth_1/micro_blaze_AMBA_BUS_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file micro_blaze_AMBA_BUS_wrapper_utilization_synth.rpt -pb micro_blaze_AMBA_BUS_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct  5 13:58:43 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  5 18:11:05 2024...

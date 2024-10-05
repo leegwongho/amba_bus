@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:myip_axi_test_led:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 `timescale 1ns/1ps
 

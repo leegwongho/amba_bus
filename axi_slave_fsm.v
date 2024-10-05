@@ -27,17 +27,17 @@ module axi_slave_fsm(
     input               M_RREADY,
     input       [3:0]   M_BLEN,
     output reg          S_RVALID,
-    output reg  [31:0]  S_RDATA);
+    output reg  [31:0]  S_RDATA,
+    
+    output reg  [15:0]  led);
 
     reg [7:0] slave_memory[0:31];
 
     parameter IDLE = 9'b000000001;
     parameter STATE_ARADDR = 9'b000000010;
     parameter STATE_AWADDR = 9'b000000100;
-  //  parameter STATE_READ_READY = 9'b000001000;
     parameter STATE_WRITE_READY = 9'b000010000;
     parameter STATE_READ = 9'b000100000;
-    parameter STATE_WRITE = 9'b001000000;
 
     reg [8:0] state, state_next;
     reg [31:0] araddr_reg, araddr_reg_next;
@@ -78,7 +78,6 @@ module axi_slave_fsm(
         strb_reg_next = strb_reg;
         case (state)
             IDLE : begin
-                
                 if (M_ARVALID) begin
                     S_ARREADY = 1'b1;
                     S_RVALID = 1'b1;
@@ -98,7 +97,6 @@ module axi_slave_fsm(
             end
             STATE_ARADDR : begin
                 S_ARREADY = 1'b0;
-
                 if (burst_lenth[0]) begin
                     read_data_reg_next[7:0] = slave_memory[araddr_reg];
                 end
@@ -116,20 +114,11 @@ module axi_slave_fsm(
                     S_RDATA = read_data_reg;
                     state_next = STATE_READ;
                 end
-            //    state_next = STATE_READ_READY;
             end
             STATE_AWADDR : begin
                 S_AWREADY = 1'b0;
-                
                 state_next = STATE_WRITE_READY;
             end
-            // STATE_READ_READY : begin
-                
-                
-                
-                
-                
-            // end
             STATE_WRITE_READY : begin
                 if (strb_reg[0]) begin
                     slave_memory[awaddr_reg] = write_data_reg[7:0];
@@ -158,5 +147,14 @@ module axi_slave_fsm(
         endcase
     end
 
+
+    always @(posedge S_ACLK) begin
+        if (!S_ARRESET_N) begin
+            led = 16'b0000_0000_0000_0001;
+        end
+        else begin
+            led = {slave_memory[0], slave_memory[1]};
+        end
+    end
 
 endmodule

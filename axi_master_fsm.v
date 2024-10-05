@@ -47,10 +47,6 @@ module axi_master_fsm(
     parameter STATE_AWADDR = 9'b000000100;
     parameter STATE_READ_READY = 9'b000001000;
     parameter STATE_WRITE_READY = 9'b000010000;
-    parameter STATE_READ = 9'b000100000;
-    parameter STATE_WRITE = 9'b001000000;
-    parameter STATE_READ_COMPLETE = 9'b010000000;
-    parameter STATE_WRITE_COMPLETE = 9'b100000000;
     
     reg [8:0] state, state_next;
     reg [31:0] araddr_reg, araddr_reg_next;
@@ -94,15 +90,13 @@ module axi_master_fsm(
                araddr_reg_next = U_ARADDR;
                burst_lenth_next = U_BLEN;
                read_data_reg_next = S_RDATA;
-               M_ARADDR = araddr_reg;
-               M_BLEN = burst_lenth;
-               U_RDATA = read_data_reg;
                if (U_RVALID) begin
                     state_next = STATE_ARADDR;
                     M_ARVALID = 1'b1;
                     M_RREADY = 1'b1;
+                    M_ARADDR = araddr_reg;
+                    M_BLEN = burst_lenth;
                end
-
                write_data_reg_next = U_WDATA;
                strb_reg_next = U_STRB;
                awaddr_reg_next = U_AWADDR;
@@ -115,19 +109,14 @@ module axi_master_fsm(
                     M_WSTRB = strb_reg;
                end 
             end
-            STATE_ARADDR : begin
-                
-                
+            STATE_ARADDR : begin  
                 if (S_ARREADY) begin
                     M_ARVALID = 0;
                     
                     state_next = STATE_READ_READY;
                 end
             end
-            STATE_AWADDR : begin
-                
-                
-                
+            STATE_AWADDR : begin   
                 if (S_AWREADY) begin
                     M_AWVALID = 0;
                     state_next = STATE_WRITE_READY;
@@ -135,7 +124,7 @@ module axi_master_fsm(
                 end
             end
             STATE_READ_READY : begin
-                
+                U_RDATA = read_data_reg;
                 if (S_RVALID) begin
                     M_RREADY = 1'b0;
                     state_next = IDLE;
@@ -148,20 +137,6 @@ module axi_master_fsm(
                     state_next = IDLE;
                 end
             end
-            // STATE_READ : begin
-                
-            //     state_next = IDLE;
-            // end
-            // STATE_WRITE : begin
-                
-            //     state_next = IDLE;
-            // end
-            // STATE_READ_COMPLETE : begin
-                
-            // end
-            // STATE_WRITE_COMPLETE : begin
-                
-            // end 
             default: ;
         endcase
     end

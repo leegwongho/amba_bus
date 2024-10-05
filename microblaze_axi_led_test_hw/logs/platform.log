@@ -1022,3 +1022,320 @@ TRACE::2024-10-05.14:18:04::SCWMssOS::Checking the sw design at  C:/github/amba_
 TRACE::2024-10-05.14:18:04::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2024-10-05.14:18:04::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWPlatform::Clearing the existing platform
+TRACE::2024-10-05.18:13:46::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-10-05.18:13:46::SCWMssOS::Removing the swdes entry for  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWSystem::Clearing the domains completed.
+TRACE::2024-10-05.18:13:46::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform location is C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Removing the HwDB with name C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-10-05.18:13:46::SCWPlatform::Opened new HwDB with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWReader::Active system found as  microblaze_axi_led_test_hw
+TRACE::2024-10-05.18:13:46::SCWReader::Handling sysconfig microblaze_axi_led_test_hw
+TRACE::2024-10-05.18:13:46::SCWDomain::checking for install qemu data   : 
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:46::SCWMssOS::No sw design opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWMssOS::mss exists loading the mss file  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWMssOS::Opened the sw design from mss  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWMssOS::Adding the swdes entry C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-05.18:13:46::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-05.18:13:46::SCWMssOS::Opened the sw design.  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-10-05.18:13:46::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:46::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:46::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:46::SCWReader::No isolation master present  
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform location is C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:52::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:52::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:52::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_5
+TRACE::2024-10-05.18:13:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:52::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:52::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:52::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/tempdsa/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::update - Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_6
+TRACE::2024-10-05.18:13:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:52::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-10-05.18:13:52::SCWPlatform::Opened new HwDB with name micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:52::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:52::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:52::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:52::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:52::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:52::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:52::SCWWriter::formatted JSON is {
+	"platformName":	"microblaze_axi_led_test_hw",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microblaze_axi_led_test_hw",
+	"platHandOff":	"C:/github/amba_bus/soc_AMBA_BUS/micro_blaze_AMBA_BUS_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_blaze_AMBA_BUS_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microblaze_axi_led_test_hw",
+	"systems":	[{
+			"systemName":	"microblaze_axi_led_test_hw",
+			"systemDesc":	"microblaze_axi_led_test_hw",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microblaze_axi_led_test_hw",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"27c05a92e90e7f0aeaad682e7d899919",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-10-05.18:13:59::SCWPlatform::Started generating the artifacts platform microblaze_axi_led_test_hw
+TRACE::2024-10-05.18:13:59::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-10-05.18:13:59::SCWPlatform::Started generating the artifacts for system configuration microblaze_axi_led_test_hw
+LOG::2024-10-05.18:13:59::SCWSystem::Checking the domain standalone_domain
+LOG::2024-10-05.18:13:59::SCWSystem::Not a boot domain 
+LOG::2024-10-05.18:13:59::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-10-05.18:13:59::SCWDomain::Generating domain artifcats
+TRACE::2024-10-05.18:13:59::SCWMssOS::Generating standalone artifcats
+TRACE::2024-10-05.18:13:59::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:59::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:59::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWMssOS::Completed writing the mss file at C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp
+TRACE::2024-10-05.18:13:59::SCWMssOS::Mss edits present, copying mssfile into export location C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-10-05.18:13:59::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-10-05.18:13:59::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-10-05.18:13:59::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-10-05.18:13:59::SCWMssOS::Copying to export directory.
+TRACE::2024-10-05.18:13:59::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-10-05.18:13:59::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-10-05.18:13:59::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-10-05.18:13:59::SCWSystem::Completed Processing the sysconfig microblaze_axi_led_test_hw
+LOG::2024-10-05.18:13:59::SCWPlatform::Completed generating the artifacts for system configuration microblaze_axi_led_test_hw
+TRACE::2024-10-05.18:13:59::SCWPlatform::Started preparing the platform 
+TRACE::2024-10-05.18:13:59::SCWSystem::Writing the bif file for system config microblaze_axi_led_test_hw
+TRACE::2024-10-05.18:13:59::SCWSystem::dir created 
+TRACE::2024-10-05.18:13:59::SCWSystem::Writing the bif 
+TRACE::2024-10-05.18:13:59::SCWPlatform::Started writing the spfm file 
+TRACE::2024-10-05.18:13:59::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-10-05.18:13:59::SCWPlatform::Completed generating the platform
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:59::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:59::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWWriter::formatted JSON is {
+	"platformName":	"microblaze_axi_led_test_hw",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microblaze_axi_led_test_hw",
+	"platHandOff":	"C:/github/amba_bus/soc_AMBA_BUS/micro_blaze_AMBA_BUS_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_blaze_AMBA_BUS_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microblaze_axi_led_test_hw",
+	"systems":	[{
+			"systemName":	"microblaze_axi_led_test_hw",
+			"systemDesc":	"microblaze_axi_led_test_hw",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microblaze_axi_led_test_hw",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"27c05a92e90e7f0aeaad682e7d899919",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-10-05.18:13:59::SCWPlatform::updated the xpfm file.
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA given C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA absoulate path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform::DSA directory C:/github/amba_bus/microblaze_axi_led_test_hw/hw
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Platform Path C:/github/amba_bus/microblaze_axi_led_test_hw/hw/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-05.18:13:59::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-05.18:13:59::SCWPlatform::Trying to set the existing hwdb with name micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Opened existing hwdb micro_blaze_AMBA_BUS_wrapper_7
+TRACE::2024-10-05.18:13:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-05.18:13:59::SCWMssOS::Checking the sw design at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-05.18:13:59::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/github/amba_bus/microblaze_axi_test_led_hw/microblaze_0/standalone_domain/bsp/system.mss|system_0||
+
+TRACE::2024-10-05.18:13:59::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/microblaze_axi_led_test_hw/microblaze_0/standalone_domain/bsp/system.mss

@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -75,6 +74,7 @@ set rc [catch {
   set_property webtalk.parent_dir C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.cache/wt [current_project]
   set_property parent.project_path C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.xpr [current_project]
   set_property ip_repo_paths {
+  C:/github/amba_bus/ip_repo/myip_input_sw_output_led_1.0
   C:/github/amba_bus/ip_repo/myip_axi_test_led_1.0
   C:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0
   C:/github/amba_bus/ip_repo/myip_axi_interface_1.0

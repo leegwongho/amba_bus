@@ -136,11 +136,11 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/sim/micro_blaze_AMBA_BUS_axi_uartlite_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba" "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_master_fsm.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_slave_fsm.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/ab19/src/axi_top.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0_S00_AXI.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/ab19/hdl/myip_axi_test_led_v1_0.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_master_fsm.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_slave_fsm.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/1f90/src/axi_top.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0_S00_AXI.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/1f90/hdl/myip_axi_test_led_v1_0.v" \
 "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0/sim/micro_blaze_AMBA_BUS_myip_axi_test_led_0_0.v" \
 "../../../bd/micro_blaze_AMBA_BUS/sim/micro_blaze_AMBA_BUS.v" \
 
