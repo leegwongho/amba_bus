@@ -1,0 +1,21 @@
+19:29:31 **** Incremental Build of configuration Debug for project microblaze_led_on_off_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/github/amba_bus/microblaze_led_on_off_hw/export/microblaze_led_on_off_hw/sw/microblaze_led_on_off_hw/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: microblaze_led_on_off_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/github/amba_bus/microblaze_led_on_off_hw/export/microblaze_led_on_off_hw/sw/microblaze_led_on_off_hw/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microblaze_led_on_off_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: microblaze_led_on_off_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size microblaze_led_on_off_app.elf  |tee "microblaze_led_on_off_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6108	    632	   3108	   9848	   2678	microblaze_led_on_off_app.elf
+'Finished building: microblaze_led_on_off_app.elf.size'
+' '
+
+19:29:32 Build Finished (took 1s.14ms)
+

@@ -1,0 +1,58 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Oct  5 19:19:00 2024
+| Host         : leegwongho running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'micro_blaze_AMBA_BUS_myip_potato_axi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of micro_blaze_AMBA_BUS_myip_potato_axi_0_0 (xilinx.com:user:myip_potato_axi:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Oct  5 18:59:14 2024
+| Host         : leegwongho running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'micro_blaze_AMBA_BUS_myip_potato_axi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of micro_blaze_AMBA_BUS_myip_potato_axi_0_0 (xilinx.com:user:myip_potato_axi:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Oct  5 18:53:00 2024
+| Host         : leegwongho running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'micro_blaze_AMBA_BUS_myip_potato_axi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of micro_blaze_AMBA_BUS_myip_potato_axi_0_0 (xilinx.com:user:myip_potato_axi:1.0) from (Rev. 2) to (Rev. 3)
+

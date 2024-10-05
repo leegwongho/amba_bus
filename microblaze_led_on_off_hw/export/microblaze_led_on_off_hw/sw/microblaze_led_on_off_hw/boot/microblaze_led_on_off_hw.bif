@@ -1,0 +1,6 @@
+/*microblaze_led_on_off_hw*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}
