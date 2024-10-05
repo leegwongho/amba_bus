@@ -474,7 +474,7 @@
 
 
 	axi_master DUT_MASTER(  .ACLK(S_AXI_ACLK),
-                            .ARESET(~S_AXI_ARESETN),
+                            .ARESET(S_AXI_ARESETN),
                             .AWREADY(AWREADY),
                             .AWVALID(AWVALID),
                             .AWADDR(AWADDR),
@@ -501,7 +501,7 @@
 
 
 	axi_slave DUT_slave(    .ACLK(S_AXI_ACLK),
-                            .ARESET(~S_AXI_ARESETN),
+                            .ARESET(S_AXI_ARESETN),
                             .AWADDR(AWADDR),
                             .AWVALID(AWVALID),
                             .AWREADY(AWREADY),

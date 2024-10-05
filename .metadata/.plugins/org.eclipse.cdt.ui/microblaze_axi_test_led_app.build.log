@@ -1,25 +1,6 @@
-16:04:37 **** Incremental Build of configuration Debug for project microblaze_axi_test_led_app ****
+17:08:39 **** Incremental Build of configuration Debug for project microblaze_axi_test_led_app ****
 make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/github/amba_bus/microblaze_axi_test_led_hw/export/microblaze_axi_test_led_hw/sw/microblaze_axi_test_led_hw/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:76:5: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
-     MB_Sleep(100);
-     ^~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: microblaze_axi_test_led_app.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/github/amba_bus/microblaze_axi_test_led_hw/export/microblaze_axi_test_led_hw/sw/microblaze_axi_test_led_hw/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microblaze_axi_test_led_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: microblaze_axi_test_led_app.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size microblaze_axi_test_led_app.elf  |tee "microblaze_axi_test_led_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   6292	    632	   3108	  10032	   2730	microblaze_axi_test_led_app.elf
-'Finished building: microblaze_axi_test_led_app.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-16:04:38 Build Finished (took 949ms)
+17:08:39 Build Finished (took 209ms)
 

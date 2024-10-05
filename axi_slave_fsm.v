@@ -34,12 +34,12 @@ module axi_slave_fsm(
     parameter IDLE = 9'b000000001;
     parameter STATE_ARADDR = 9'b000000010;
     parameter STATE_AWADDR = 9'b000000100;
-    parameter STATE_READ_READY = 9'b000001000;
+  //  parameter STATE_READ_READY = 9'b000001000;
     parameter STATE_WRITE_READY = 9'b000010000;
     parameter STATE_READ = 9'b000100000;
     parameter STATE_WRITE = 9'b001000000;
 
-    reg [7:0] state, state_next;
+    reg [8:0] state, state_next;
     reg [31:0] araddr_reg, araddr_reg_next;
     reg [31:0] awaddr_reg, awaddr_reg_next;
     reg [3:0] burst_lenth, burst_lenth_next;

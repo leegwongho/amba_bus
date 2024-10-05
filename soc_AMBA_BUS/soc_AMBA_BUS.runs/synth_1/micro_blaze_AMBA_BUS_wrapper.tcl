@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,6 +33,7 @@ set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/sunda/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
+  c:/github/amba_bus/ip_repo/myip_axi_test_led_1.0
   c:/github/amba_bus/ip_repo/myip_axi_led_on_off_1.0
   c:/github/amba_bus/ip_repo/myip_axi_interface_1.0
 } [current_project]
@@ -45,20 +47,13 @@ set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_clk_wiz_0_0/micro_blaze_AMBA_BUS_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_microblaze_0_0/micro_blaze_AMBA_BUS_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_microblaze_0_0/micro_blaze_AMBA_BUS_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_microblaze_0_0/micro_blaze_AMBA_BUS_microblaze_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_dlmb_v10_0/micro_blaze_AMBA_BUS_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_dlmb_v10_0/micro_blaze_AMBA_BUS_dlmb_v10_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_ilmb_v10_0/micro_blaze_AMBA_BUS_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_ilmb_v10_0/micro_blaze_AMBA_BUS_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_dlmb_bram_if_cntlr_0/micro_blaze_AMBA_BUS_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_ilmb_bram_if_cntlr_0/micro_blaze_AMBA_BUS_ilmb_bram_if_cntlr_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_lmb_bram_0/micro_blaze_AMBA_BUS_lmb_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_mdm_1_0/micro_blaze_AMBA_BUS_mdm_1_0.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_mdm_1_0/micro_blaze_AMBA_BUS_mdm_1_0_ooc_trace.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0/micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_xbar_0/micro_blaze_AMBA_BUS_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/micro_blaze_AMBA_BUS_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/micro_blaze_AMBA_BUS_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/micro_blaze_AMBA_BUS_axi_uartlite_0_0.xdc]

@@ -8,3 +8,9 @@ timestamp=[2024-10-04 15:34:26], mode=WORKBENCH_START, duration=0:00:09.713, dur
 timestamp=[2024-10-04 15:34:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.682, duration_ms=682, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,microblaze_axi_test_led_app,microblaze_axi_test_led_app_system,microblaze_axi_test_led_hw}
 timestamp=[2024-10-04 15:34:45], mode=PLATFORM_GENERATION, duration=0:00:11.419, duration_ms=11419, data={name=microblaze_axi_test_led_hw}
 timestamp=[2024-10-04 15:57:41], mode=PLATFORM_GENERATION, duration=0:00:01.982, duration_ms=1982, data={name=microblaze_axi_test_led_hw}
+timestamp=[2024-10-05 14:16:43], mode=WORKBENCH_START, duration=0:00:15.847, duration_ms=15847, data={}
+timestamp=[2024-10-05 14:16:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.320, duration_ms=1320, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,microblaze_axi_test_led_app,microblaze_axi_test_led_app_system,microblaze_axi_test_led_hw}
+timestamp=[2024-10-05 14:17:42], mode=PLATFORM_CREATION, duration=0:00:07.840, duration_ms=7840, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-10-05 14:18:04], mode=PLATFORM_GENERATION, duration=0:00:15.142, duration_ms=15142, data={name=microblaze_axi_led_test_hw}
+timestamp=[2024-10-05 14:18:31], mode=APP_CREATION, duration=0:00:01.854, duration_ms=1854, data={name=microblaze_aix_led_test_app, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=microblaze_axi_led_test_hw, application_type=application}
+timestamp=[2024-10-05 14:23:02], mode=PLATFORM_GENERATION, duration=0:00:03.033, duration_ms=3033, data={name=microblaze_axi_test_led_hw}

@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728024636">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728104153">
   <File Type="BITSTR-BMM" Name="micro_blaze_AMBA_BUS_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="micro_blaze_AMBA_BUS_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="micro_blaze_AMBA_BUS_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="micro_blaze_AMBA_BUS_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="micro_blaze_AMBA_BUS_wrapper_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="micro_blaze_AMBA_BUS_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="micro_blaze_AMBA_BUS_wrapper_reports.tcl"/>
   <File Type="OPT-DRC" Name="micro_blaze_AMBA_BUS_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="micro_blaze_AMBA_BUS_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="micro_blaze_AMBA_BUS_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="micro_blaze_AMBA_BUS_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="micro_blaze_AMBA_BUS_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="micro_blaze_AMBA_BUS_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="micro_blaze_AMBA_BUS_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="micro_blaze_AMBA_BUS_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="micro_blaze_AMBA_BUS_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="micro_blaze_AMBA_BUS_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="micro_blaze_AMBA_BUS_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="micro_blaze_AMBA_BUS_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="micro_blaze_AMBA_BUS_wrapper_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="micro_blaze_AMBA_BUS_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="micro_blaze_AMBA_BUS_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="micro_blaze_AMBA_BUS_wrapper_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="micro_blaze_AMBA_BUS_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="micro_blaze_AMBA_BUS_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="micro_blaze_AMBA_BUS_wrapper_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="micro_blaze_AMBA_BUS_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="micro_blaze_AMBA_BUS_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="micro_blaze_AMBA_BUS_wrapper_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="micro_blaze_AMBA_BUS_wrapper.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="micro_blaze_AMBA_BUS_wrapper_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="micro_blaze_AMBA_BUS_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="micro_blaze_AMBA_BUS_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="micro_blaze_AMBA_BUS_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="micro_blaze_AMBA_BUS_wrapper.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="micro_blaze_AMBA_BUS_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="micro_blaze_AMBA_BUS_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="micro_blaze_AMBA_BUS_wrapper_route_status.rpt"/>
@@ -37,25 +46,35 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="micro_blaze_AMBA_BUS_wrapper.vdi"/>
+  <File Type="ROUTE-SIMILARITY" Name="micro_blaze_AMBA_BUS_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="micro_blaze_AMBA_BUS_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="micro_blaze_AMBA_BUS_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="micro_blaze_AMBA_BUS_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="micro_blaze_AMBA_BUS_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="micro_blaze_AMBA_BUS_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="micro_blaze_AMBA_BUS_wrapper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="micro_blaze_AMBA_BUS_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="micro_blaze_AMBA_BUS_wrapper.nky"/>
   <File Type="PDI-FILE" Name="micro_blaze_AMBA_BUS_wrapper.pdi"/>
   <File Type="RCFI_FILE" Name="micro_blaze_AMBA_BUS_wrapper.rcfi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="CFI_FILE" Name="micro_blaze_AMBA_BUS_wrapper.cfi"/>
   <File Type="RNPI_FILE" Name="micro_blaze_AMBA_BUS_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="micro_blaze_AMBA_BUS_wrapper.npi"/>
   <File Type="RBD_FILE" Name="micro_blaze_AMBA_BUS_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="micro_blaze_AMBA_BUS_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="micro_blaze_AMBA_BUS_wrapper.sysdef"/>
   <File Type="BG-BGN" Name="micro_blaze_AMBA_BUS_wrapper.bgn"/>
   <File Type="BG-DRC" Name="micro_blaze_AMBA_BUS_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="micro_blaze_AMBA_BUS_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/micro_blaze_AMBA_BUS/micro_blaze_AMBA_BUS.bd">
@@ -81,6 +100,22 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../axi_slave.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_master_fsm.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_slave_fsm.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -125,18 +160,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_rst_clk_wiz_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="micro_blaze_AMBA_BUS_myip_axi_led_on_off_0_1"/>
 </GenRun>

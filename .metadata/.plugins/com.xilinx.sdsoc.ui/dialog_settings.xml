@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\github\amba_bus\microblaze_axi_test_led_hw\export\microblaze_axi_test_led_hw" key="sdx.custom.platform.repository.last.directory.dialog.location"/>
-	<item value="C:/github/amba_bus/microblaze_axi_test_led_hw/export/microblaze_axi_test_led_hw" key="sdx.custom.platform.repository.locations"/>
+	<item value="C:/github/amba_bus/microblaze_axi_led_test_hw/export/microblaze_axi_led_test_hw;C:/github/amba_bus/microblaze_axi_test_led_hw/export/microblaze_axi_test_led_hw" key="sdx.custom.platform.repository.locations"/>
 </section>

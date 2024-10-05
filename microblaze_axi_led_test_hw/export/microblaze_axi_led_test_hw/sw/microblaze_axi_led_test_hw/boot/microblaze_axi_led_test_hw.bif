@@ -1,0 +1,6 @@
+/*microblaze_axi_led_test_hw*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

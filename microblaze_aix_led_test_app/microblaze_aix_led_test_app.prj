@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="microblaze_aix_led_test_app" location="C:/github/amba_bus/microblaze_aix_led_test_app" platform="C:/github/amba_bus/microblaze_axi_led_test_hw/export/microblaze_axi_led_test_hw/microblaze_axi_led_test_hw.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="microblaze_aix_led_test_app_system" sysConfig="microblaze_axi_led_test_hw" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="81a908ab96a52ffcf956d3299c4336d4">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.928657121" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.128160142" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
