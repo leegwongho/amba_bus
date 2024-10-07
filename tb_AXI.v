@@ -298,7 +298,7 @@ axi_slave_fsm DUT_slave(
         // @(posedge RVALID);
 
         // 여섯번째 트랜잭션
-        blen = 4'b1111;
+        blen = 4'b0001;
         ar_addr = 32'd2;
         #100;
         valid_r = 1'b1;
