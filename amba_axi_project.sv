@@ -136,6 +136,7 @@ always @(posedge s_axi_aclk) begin
                 s_axi_bresp  <= 2'b00;
                 s_axi_bvalid <= 1'b1;
                 if (s_axi_bready) begin
+                    s_axi_bvalid <= 1'b0;
                     state <= idle;
                 end else begin
                     state <= send_wr_resp;
@@ -155,7 +156,7 @@ always @(posedge s_axi_aclk) begin
                 if (raddr < 128) begin
                     state <= pop_data;
                 end else begin
-                    s_axi_rvalid <= 1'b1;  // rvalid가 3clk이 켜져있는 것은 여기 state에 아래있는 code를 다른 state로 넣고 거기서 rvalid를 0으로 주면 해결될 것 같다.
+                    s_axi_rvalid <= 1'b1;  
                     state        <= send_rd_err;
                     s_axi_rdata  <= 0;
                     s_axi_rresp  <= 2'b11;
@@ -168,10 +169,12 @@ always @(posedge s_axi_aclk) begin
                     state <= pop_data;
                     count <= count + 1;
                 end else begin
-                    s_axi_rvalid <= 1'b1;  // rvalid가 3clk이 켜져있는 것은 여기 state에 아래있는 code를 다른 state로 넣고 거기서 rvalid를 0으로 주면 해결될 것 같다.
+                    s_axi_rvalid <= 1'b1;  
                     s_axi_rdata  <= rdata; 
                     s_axi_rresp  <= 2'b00;
                     if (s_axi_rready) begin
+                        s_axi_rvalid <= 1'b0;
+                        s_axi_rdata  <= 0;
                         state <= idle;
                     end else begin
                         state <= pop_data;
@@ -336,11 +339,13 @@ always @(posedge m_axi_aclk) begin
         send_wvalid: begin
           if (m_axi_awready == 1'b1) begin
                 m_axi_awvalid <= 1'b0;
-                m_axi_wvalid <= 1'b1;
+                m_axi_wvalid  <= 1'b1;
+                m_axi_awaddr  <= 0;
             m_axi_wdata  <= wdata;
             end 
             if (m_axi_wready == 1'b1) begin
                 m_axi_wvalid <= 1'b0;
+                m_axi_wdata  <= 0;
                 state <= send_bready;
             end
         end
@@ -348,7 +353,7 @@ always @(posedge m_axi_aclk) begin
         send_bready: begin
             if (m_axi_bvalid == 1'b1) begin
                 m_axi_bready <= 1'b1;
-            // bready가 3clk이 켜져있는 것은 여기 state에 아래있는 code를 다른 state로 넣고 거기서 bready를 0으로 주면 해결될 것 같다.
+
                 if (m_axi_bresp == 2'b00) begin
                     wr_ready     <= 1'b1;
                     state <= idle; 
@@ -358,7 +363,6 @@ always @(posedge m_axi_aclk) begin
                 end 
                 else begin 
                     state <= send_bready;  // m_axi_bresp가 안 온 경우
-                 // 만약 m_axi_bresp == 2'bz가 오면 idle로 보내야 하나?
                 end
             end 
             else begin
@@ -389,6 +393,7 @@ always @(posedge m_axi_aclk) begin
         rcv_arready: begin
                 if (m_axi_arready == 1'b1) begin
                     m_axi_arvalid <= 1'b0;
+                    m_axi_araddr  <= 0;
                     state         <= send_rready;
                 end else begin
                     state <= rcv_arready;
@@ -436,3 +441,5 @@ always @(posedge m_axi_aclk) begin
 end
 
 endmodule
+
+

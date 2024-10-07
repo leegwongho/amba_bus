@@ -103,66 +103,133 @@ axilite_s s_dut(
 
 
 
-
+event complete;
     always #5 axi_aclk = ~axi_aclk;
 
     initial begin
-axi_aclk = 1'b1;
-axi_aresetn = 1'b0;
-wr_ready = 1'b0;
-rd_ready = 1'b0;
-#40 axi_aresetn = 1'b1; // 더 긴 reset 기간 후 트랜잭션 시작
+    
+     axi_aresetn     <= 1'b0; 
+     write           <= 1'b0; 
+     read            <= 1'b0; 
+     user_waddr      <= 1'b0; 
+     user_wdata      <= 1'b0; 
+     user_raddr      <= 1'b0; 
+     user_rdata      <= 1'b0; 
+    
+     #40;    
+     axi_aresetn <= 1'b1;
 
 
         @(posedge axi_aclk) begin
-            user_waddr = 32'h87;            
+            user_waddr = 32'h0;            
             user_wdata  = 32'h12345678;         
             write   = 1'b1;
         end
         
-        @(posedge wr_ready)begin
-            user_waddr = 32'h87;            
+        @(posedge axi_aclk) begin
             write   = 1'b0;
+            //user_waddr = 32'h0;
+            //user_wdata  = 32'h0;             
+        end
+
+        @(posedge wr_ready)begin
+            write   = 1'b0;
+            user_waddr = 32'h0;     
+
         end  // wait for ready signal
+
+////////////////////////////////////////////////////
 
 
         @(posedge axi_aclk) begin
-            user_waddr = 32'd15;            
+            user_waddr = 32'h1;            
             user_wdata  = 32'hC0DE1234;         
             write   = 1'b1;
         end
         
-        @(posedge wr_ready)begin
-            user_waddr = 32'd15;            
+        @(posedge axi_aclk) begin
             write   = 1'b0;
+            // user_waddr = 32'h0;            
+            // user_wdata  = 32'h0; 
+        end
+
+        @(posedge wr_ready)begin
+            user_waddr = 32'h0;            
+            write   = 1'b0;
+
         end  // wait for ready signal
 
-
+////////////////////////////////////////////////////
       
-
+  
         @(posedge axi_aclk);
-        read = 1'b1;
-        user_raddr = 32'h87;
+            read = 1'b1;
+            user_raddr = 32'h0;
+
+
+        @(posedge axi_arvalid) begin
+            read = 1'b0;
+            //user_raddr = 32'h0;
+        end
+
         @(posedge rd_ready)begin
-           read = 1'b0;
-        user_raddr = 32'h87;
+            read = 1'b0;
+            user_raddr = 32'h0;
         end  // wait for ready signal
 
-        @(posedge axi_aclk);
-        read = 1'b1;
-        user_raddr = 32'd15;
-        @(posedge rd_ready)begin
-           read = 1'b0;
-        user_raddr = 32'd15;
-        end  // wait for ready signal
+////////////////////////////////////////////////////
 
+        @(posedge axi_aclk);
+            read = 1'b1;
+            user_raddr = 32'h1;
+
+        @(posedge axi_aclk) begin
+            read = 1'b0;
+            //user_raddr = 32'h0;
+        end
+
+
+        @(posedge rd_ready)begin
+            read = 1'b0;
+            user_raddr = 32'h0;
+        end  // wait for ready signal
+        
+        @(posedge axi_aclk);
+        -> complete;
         
         
         
     end
 
     initial begin
-             #400;
-            $stop;
+      @(complete.triggered);
+            $finish();
     end
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
