@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="m_b_t_a_app" location="C:/github/amba_bus/m_b_t_a_app" platform="C:/github/amba_bus/m_b_t_a/export/m_b_t_a/m_b_t_a.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="m_b_t_a_app_system" sysConfig="m_b_t_a" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="24d04f7498d77828eedd5805325e702f">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.627012830" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.500014368" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

@@ -27,9 +27,10 @@ module axi_slave_fsm(
     input               M_RREADY,
     input       [3:0]   M_BLEN,
     output reg          S_RVALID,
-    output reg  [31:0]  S_RDATA,
+    output reg  [31:0]  S_RDATA
     
-    output reg  [15:0]  led);
+    //output reg [15:0]  led
+    );
 
     reg [7:0] slave_memory[0:31];
 
@@ -148,13 +149,15 @@ module axi_slave_fsm(
     end
 
 
-    always @(posedge S_ACLK) begin
-        if (!S_ARRESET_N) begin
-            led = 16'b0000_0000_0000_0001;
-        end
-        else begin
-            led = {slave_memory[0], slave_memory[1]};
-        end
-    end
+    // always @(posedge S_ACLK) begin
+    //     if (!S_ARRESET_N) begin
+    //         led = 16'b0000_0000_0000_0001;
+    //     end
+    //     else begin
+    //         led = {slave_memory[0], slave_memory[1]};
+    //     end
+    // end
 
 endmodule
+
+

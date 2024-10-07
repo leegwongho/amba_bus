@@ -7,4 +7,12 @@ Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-5021] port 'S_BRESP' is not connected on this instance [C:/github/amba_bus/tb_AXI.v:52]
 WARNING: [VRFC 10-5021] port 'M_BREADY' is not connected on this instance [C:/github/amba_bus/tb_AXI.v:89]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_master_fsm
+Compiling module xil_defaultlib.axi_slave_fsm
+Compiling module xil_defaultlib.tb_AXI_Memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_AXI_Memory_behav

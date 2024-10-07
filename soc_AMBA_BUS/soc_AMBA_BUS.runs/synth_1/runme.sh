@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log micro_blaze_AMBA_BUS_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_blaze_AMBA_BUS_wrapper.tcl
+EAStep vivado -log axi_test_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_test_1_wrapper.tcl

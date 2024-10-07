@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/github/amba_bus/axi_master_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_master_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/github/amba_bus/axi_slave_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slave_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/github/amba_bus/tb_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AXI_Memory

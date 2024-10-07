@@ -729,3 +729,16 @@ con
 ----------------End of Script----------------
 
 15:54:32 INFO  : Launch script is exported to file 'C:\github\amba_bus\.sdk\launch_scripts\single_application_debug\systemdebugger_microblaze_led_on_off_app_system_standalone.tcl'
+16:39:44 INFO  : Hardware specification for platform project 'm_b_t_a' is updated.
+16:39:46 INFO  : Successfully done sdx_reload_mss "C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss"
+16:40:16 ERROR : Failed to openhw "C:/github/amba_bus/m_b_t_a/export/m_b_t_a/hw/micro_blaze_AMBA_BUS_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+16:47:15 INFO  : Disconnected from the channel tcfchan#17.
+18:35:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\github\amba_bus\temp_xsdb_launch_script.tcl
+18:35:59 INFO  : XSCT server has started successfully.
+18:35:59 INFO  : Successfully done setting XSCT server connection channel  
+18:35:59 INFO  : plnx-install-location is set to ''
+18:35:59 INFO  : Successfully done setting workspace for the tool. 
+18:36:00 INFO  : Registering command handlers for Vitis TCF services
+18:36:00 INFO  : Successfully done query RDI_DATADIR 
