@@ -42,8 +42,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==micro_blaze_AMB
 # IP: bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/micro_blaze_AMBA_BUS_axi_uartlite_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==micro_blaze_AMBA_BUS_axi_uartlite_0_0 || ORIG_REF_NAME==micro_blaze_AMBA_BUS_axi_uartlite_0_0} -quiet] -quiet
 
-# IP: bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_potato_axi_0_0/micro_blaze_AMBA_BUS_myip_potato_axi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==micro_blaze_AMBA_BUS_myip_potato_axi_0_0 || ORIG_REF_NAME==micro_blaze_AMBA_BUS_myip_potato_axi_0_0} -quiet] -quiet
+# IP: bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==micro_blaze_AMBA_BUS_myip_test_axi_1_0_0 || ORIG_REF_NAME==micro_blaze_AMBA_BUS_myip_test_axi_1_0_0} -quiet] -quiet
 
 # XDC: bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_clk_wiz_0_0/micro_blaze_AMBA_BUS_clk_wiz_0_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==micro_blaze_AMBA_BUS_clk_wiz_0_0 || ORIG_REF_NAME==micro_blaze_AMBA_BUS_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

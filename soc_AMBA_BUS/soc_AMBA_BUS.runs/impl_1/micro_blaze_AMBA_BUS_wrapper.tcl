@@ -75,6 +75,7 @@ set rc [catch {
   set_property webtalk.parent_dir C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.cache/wt [current_project]
   set_property parent.project_path C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.xpr [current_project]
   set_property ip_repo_paths {
+  C:/github/amba_bus/ip_repo/myip_test_axi_1_1.0
   C:/github/amba_bus/ip_repo/myip_potato_axi_1.0
   C:/github/amba_bus/ip_repo/myip_axi_interface_1.0
 } [current_project]

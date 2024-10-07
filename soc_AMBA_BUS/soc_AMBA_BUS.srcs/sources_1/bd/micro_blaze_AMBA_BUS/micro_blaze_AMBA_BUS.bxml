@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="micro_blaze_AMBA_BUS" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1728123545"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1728123545"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1728123545"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1728123545"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1728283532"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1728283532"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1728283532"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1728283532"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\micro_blaze_AMBA_BUS_clk_wiz_0_0\micro_blaze_AMBA_BUS_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -103,8 +103,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\micro_blaze_AMBA_BUS_myip_potato_axi_0_0\micro_blaze_AMBA_BUS_myip_potato_axi_0_0.xci" Type="IP">
-        <Instance HierarchyPath="myip_potato_axi_0"/>
+      <File Name="ip\micro_blaze_AMBA_BUS_myip_test_axi_1_0_0\micro_blaze_AMBA_BUS_myip_test_axi_1_0_0.xci" Type="IP">
+        <Instance HierarchyPath="myip_test_axi_1_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

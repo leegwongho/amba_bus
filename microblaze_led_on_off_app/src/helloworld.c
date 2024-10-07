@@ -50,7 +50,7 @@
 #include "xil_printf.h"
 #include "xparameters.h"
 
-#define led_config XPAR_MYIP_POTATO_AXI_0_S00_AXI_BASEADDR
+#define led_config XPAR_MYIP_TEST_AXI_1_0_S00_AXI_BASEADDR
 
 int main()
 {
@@ -61,7 +61,7 @@ int main()
 
 
     led_init[1] = 0x00000000;
-    led_init[2] = 0xffffffff;
+    led_init[2] = 0xfffff0f0;
 
     led_init[0] = 0x00000001;
     led_init[0] = 0x00000000;
@@ -70,7 +70,7 @@ int main()
     u32 rdata;
 
 
-    led_init[3] = 0x00000000;
+    led_init[3] = 0x00000001;
 
 
     led_init[0] = 0x00000002;
@@ -78,7 +78,9 @@ int main()
 
     rdata = led_init[4];
     while (1){
-    xil_printf("data : %10x \r\n", rdata);
+
+        xil_printf("data : %10d \r\n", led_init[4]);
+
     }
     cleanup_platform();
     return 0;

@@ -93,15 +93,15 @@
   "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/sim/micro_blaze_AMBA_BUS_axi_uartlite_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/hdl/myip_potato_axi_v1_0_S00_AXI.v" \
-  "../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/src/top_axi_potato.v" \
+  "../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/hdl/myip_test_axi_1_v1_0_S00_AXI.v" \
+  "../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/src/top_axi_potato.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/src/amba_axi_project.sv" \
+  "../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/src/amba_axi_project.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/hdl/myip_potato_axi_v1_0.v" \
-  "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_potato_axi_0_0/sim/micro_blaze_AMBA_BUS_myip_potato_axi_0_0.v" \
+  "../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/hdl/myip_test_axi_1_v1_0.v" \
+  "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0/sim/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0.v" \
   "../../../bd/micro_blaze_AMBA_BUS/sim/micro_blaze_AMBA_BUS.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

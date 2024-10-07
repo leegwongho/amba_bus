@@ -1,6 +1,6 @@
-19:29:32 **** Incremental Build of configuration Debug for project microblaze_led_on_off_app_system ****
+15:54:23 **** Incremental Build of configuration Debug for project microblaze_led_on_off_app_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-19:29:33 Build Finished (took 201ms)
+15:54:23 Build Finished (took 205ms)
 

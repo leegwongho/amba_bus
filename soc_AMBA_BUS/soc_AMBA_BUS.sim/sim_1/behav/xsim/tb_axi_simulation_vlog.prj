@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba" --include "../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl" \
+"../../../../../amba_axi_project.sv" \
+"../../../../../axi_simulation.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

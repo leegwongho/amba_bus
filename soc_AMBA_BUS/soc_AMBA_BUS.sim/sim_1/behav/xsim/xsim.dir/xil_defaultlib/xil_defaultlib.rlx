@@ -2,7 +2,9 @@
 2019.2
 Nov  6 2019
 21:57:16
-C:/github/amba_bus/axi_master.v,1727665558,verilog,,C:/github/amba_bus/axi_slave.v,,axi_master,,,,,,,,
+C:/github/amba_bus/amba_axi_project.sv,1728280229,systemVerilog,,C:/github/amba_bus/axi_simulation.sv,,axilite_m;axilite_s,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
+C:/github/amba_bus/axi_master.v,1728279514,verilog,,C:/github/amba_bus/axi_slave.v,,axi_master,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
+C:/github/amba_bus/axi_simulation.sv,1728279514,systemVerilog,,,,tb_axi_simulation,,,../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba;../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl,,,,,
 C:/github/amba_bus/axi_slave.v,1727663137,verilog,,C:/github/amba_bus/tb_AXI.v,,axi_slave,,,,,,,,
 C:/github/amba_bus/soc_AMBA_BUS/soc_AMBA_BUS.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
 C:/github/amba_bus/tb_AXI.v,1727662378,verilog,,,,tb_AXI_Memory,,,,,,,,

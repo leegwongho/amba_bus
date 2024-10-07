@@ -3,6 +3,7 @@
 	<name>microblaze_led_on_off_app</name>
 	<comment>Created by Vitis v2019.2</comment>
 	<projects>
+		<project>m_b_t_a</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

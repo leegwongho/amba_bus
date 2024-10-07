@@ -35,7 +35,10 @@ module axilite_s(
     output reg          s_axi_rvalid,
     input  wire         s_axi_rready,
     output reg [31: 0]  s_axi_rdata,
-    output reg  [1: 0]  s_axi_rresp
+    output reg  [1: 0]  s_axi_rresp,
+
+    // user
+    output  reg  [15:0] led
 );
 
 localparam idle            = 0, 
@@ -194,6 +197,15 @@ always @(posedge s_axi_aclk) begin
         endcase
     end
 end
+
+    always @ (posedge s_axi_aclk) begin
+        if (!s_axi_aresetn) begin
+            led = 0; 
+        end
+        else begin
+            led = mem[0][15:0];
+        end
+    end
 
 endmodule
  

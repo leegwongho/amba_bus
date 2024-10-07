@@ -136,15 +136,15 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_axi_uartlite_0_0/sim/micro_blaze_AMBA_BUS_axi_uartlite_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba" "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/hdl/myip_potato_axi_v1_0_S00_AXI.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/src/top_axi_potato.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/hdl/myip_test_axi_1_v1_0_S00_AXI.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/src/top_axi_potato.v" \
 
 vlog -work xil_defaultlib -64 -sv "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba" "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/src/amba_axi_project.sv" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/src/amba_axi_project.sv" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/4fba" "+incdir+../../../../soc_AMBA_BUS.srcs/sources_1/bd/micro_blaze_AMBA_BUS/ipshared/ec67/hdl" \
-"../../../bd/micro_blaze_AMBA_BUS/ipshared/2fee/hdl/myip_potato_axi_v1_0.v" \
-"../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_potato_axi_0_0/sim/micro_blaze_AMBA_BUS_myip_potato_axi_0_0.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ipshared/5644/hdl/myip_test_axi_1_v1_0.v" \
+"../../../bd/micro_blaze_AMBA_BUS/ip/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0/sim/micro_blaze_AMBA_BUS_myip_test_axi_1_0_0.v" \
 "../../../bd/micro_blaze_AMBA_BUS/sim/micro_blaze_AMBA_BUS.v" \
 
 vlog -work xil_defaultlib \
