@@ -57,7 +57,8 @@
   ![image](https://github.com/user-attachments/assets/f22c8317-042a-444a-a373-6db454fd3a5d)
 
 
-  ![image](https://github.com/user-attachments/assets/861d4f1a-0d50-40f1-b5ad-675a713fe951)
+  ![image](https://github.com/user-attachments/assets/226189bd-6eba-461c-9f68-71e657a26caf)
+
 
   우리가 설계한 master, slave의 상태 천이도 이다. 
 
