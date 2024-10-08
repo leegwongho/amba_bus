@@ -1,0 +1,287 @@
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened new HwDB with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWReader::Active system found as  m_b_t_a
+TRACE::2024-10-07.16:39:46::SCWReader::Handling sysconfig m_b_t_a
+TRACE::2024-10-07.16:39:46::SCWDomain::checking for install qemu data   : 
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-10-07.16:39:46::SCWMssOS::No sw design opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::mss exists loading the mss file  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::Opened the sw design from mss  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::Adding the swdes entry C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-07.16:39:46::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-07.16:39:46::SCWMssOS::Opened the sw design.  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-10-07.16:39:46::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-07.16:39:46::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWReader::No isolation master present  
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-07.16:39:46::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::In reload Mss file.
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+KEYINFO::2024-10-07.16:39:46::SCWMssOS::Could not open the swdb for system
+KEYINFO::2024-10-07.16:39:46::SCWMssOS::Error: Hw specification provided does not have the HwDb, please check: C:/github/amba_bus/soc_AMBA_BUS/micro_blaze_AMBA_BUS_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWMssOS::Cleared the swdb table entry
+TRACE::2024-10-07.16:39:46::SCWMssOS::No sw design opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::mss exists loading the mss file  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::Opened the sw design from mss  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::Adding the swdes entry C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-07.16:39:46::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-07.16:39:46::SCWMssOS::Opened the sw design.  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:39:46::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:39:46::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:39:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:39:46::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-07.16:39:46::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:39:46::SCWMssOS::Removing the swdes entry for  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+LOG::2024-10-07.16:40:20::SCWPlatform::Started generating the artifacts platform m_b_t_a
+TRACE::2024-10-07.16:40:20::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-10-07.16:40:20::SCWPlatform::Started generating the artifacts for system configuration m_b_t_a
+LOG::2024-10-07.16:40:20::SCWSystem::Checking the domain standalone_domain
+LOG::2024-10-07.16:40:20::SCWSystem::Not a boot domain 
+LOG::2024-10-07.16:40:20::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-10-07.16:40:20::SCWDomain::Generating domain artifcats
+TRACE::2024-10-07.16:40:20::SCWMssOS::Generating standalone artifcats
+TRACE::2024-10-07.16:40:20::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-10-07.16:40:20::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:20::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:20::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:20::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:40:20::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:20::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:40:20::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:20::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:40:20::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-10-07.16:40:20::SCWMssOS::No sw design opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::mss exists loading the mss file  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::Opened the sw design from mss  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::Adding the swdes entry C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-07.16:40:20::SCWMssOS::updating the scw layer about changes
+TRACE::2024-10-07.16:40:20::SCWMssOS::Opened the sw design.  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::Completed writing the mss file at C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp
+TRACE::2024-10-07.16:40:20::SCWMssOS::Mss edits present, copying mssfile into export location C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:20::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2024-10-07.16:40:22::SCWMssOS::doing bsp build ... 
+TRACE::2024-10-07.16:40:22::SCWMssOS::System Command Ran  C: & cd  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp & make 
+TRACE::2024-10-07.16:40:22::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2024-10-07.16:40:22::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-10-07.16:40:22::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2024-10-07.16:40:22::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:22::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2024-10-07.16:40:22::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-10-07.16:40:22::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2024-10-07.16:40:22::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:22::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-10-07.16:40:22::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-10-07.16:40:22::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRACE::2024-10-07.16:40:22::SCWMssOS::TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:23::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2024-10-07.16:40:23::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-10-07.16:40:23::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2024-10-07.16:40:23::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:23::SCWMssOS::"Compiling bram"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-10-07.16:40:24::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2024-10-07.16:40:24::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::"Compiling cpu"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-10-07.16:40:24::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2024-10-07.16:40:24::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2024-10-07.16:40:24::SCWMssOS::"Compiling standalone";
+
+TRACE::2024-10-07.16:40:27::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-10-07.16:40:27::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-10-07.16:40:27::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-10-07.16:40:27::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-10-07.16:40:27::SCWSystem::Completed Processing the sysconfig m_b_t_a
+LOG::2024-10-07.16:40:27::SCWPlatform::Completed generating the artifacts for system configuration m_b_t_a
+TRACE::2024-10-07.16:40:27::SCWPlatform::Started preparing the platform 
+TRACE::2024-10-07.16:40:27::SCWSystem::Writing the bif file for system config m_b_t_a
+TRACE::2024-10-07.16:40:27::SCWSystem::dir created 
+TRACE::2024-10-07.16:40:27::SCWSystem::Writing the bif 
+TRACE::2024-10-07.16:40:27::SCWPlatform::Started writing the spfm file 
+TRACE::2024-10-07.16:40:27::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-10-07.16:40:27::SCWPlatform::Completed generating the platform
+KEYINFO::2024-10-07.16:40:27::SCWMssOS::Could not open the swdb for system
+KEYINFO::2024-10-07.16:40:27::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2024-10-07.16:40:27::SCWMssOS::Cleared the swdb table entry
+TRACE::2024-10-07.16:40:27::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-10-07.16:40:27::SCWMssOS::Writing the mss file completed C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:27::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:40:27::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:40:27::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:27::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:40:27::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:27::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-07.16:40:27::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:27::SCWWriter::formatted JSON is {
+	"platformName":	"m_b_t_a",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"m_b_t_a",
+	"platHandOff":	"C:/github/amba_bus/soc_AMBA_BUS/axi_test_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/axi_test_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"m_b_t_a",
+	"systems":	[{
+			"systemName":	"m_b_t_a",
+			"systemDesc":	"m_b_t_a",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"m_b_t_a",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"d9687642545c069bf6964f12b5efa6cf",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-10-07.16:40:27::SCWPlatform::updated the xpfm file.
+TRACE::2024-10-07.16:40:27::SCWPlatform::Trying to open the hw design at C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA given C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA absoulate path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform::DSA directory C:/github/amba_bus/m_b_t_a/hw
+TRACE::2024-10-07.16:40:27::SCWPlatform:: Platform Path C:/github/amba_bus/m_b_t_a/hw/axi_test_1_wrapper.xsa
+TRACE::2024-10-07.16:40:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-10-07.16:40:27::SCWPlatform::Trying to set the existing hwdb with name axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:27::SCWPlatform::Opened existing hwdb axi_test_1_wrapper_1
+TRACE::2024-10-07.16:40:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-10-07.16:40:27::SCWMssOS::Checking the sw design at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-10-07.16:40:27::SCWMssOS::DEBUG:  swdes dump  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-10-07.16:40:27::SCWMssOS::Sw design exists and opened at  C:/github/amba_bus/m_b_t_a/microblaze_0/standalone_domain/bsp/system.mss

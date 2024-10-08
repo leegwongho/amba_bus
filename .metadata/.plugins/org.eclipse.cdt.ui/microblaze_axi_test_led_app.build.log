@@ -1,0 +1,6 @@
+18:15:05 **** Incremental Build of configuration Debug for project microblaze_axi_test_led_app ****
+make all 
+make: Nothing to be done for 'all'.
+
+18:15:05 Build Finished (took 196ms)
+

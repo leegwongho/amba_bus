@@ -19,12 +19,122 @@ module axi_master(
     input               BVALID,
     output  reg         BREADY,
     
+    // AR(address read)CHANNEL
+    input               ARREADY,
+    output reg          ARVALID,
+    output reg  [31:0]  ARADDR,
+
+    // R(read) CHANNEL  
+    input       [31:0]  RDATA,
+    input               RVALID,
+    output reg          RREADY,
+
+    
     // user control master bit
+    input               valid_r,
     input               valid,
+    input        [31:0] ar_addr,
     input        [31:0] aw_addr,
     input        [31:0] w_data,
     input        [3:0]  w_strb,
+    output  reg  [31:0] r_data,
     output  reg         ready);
+
+
+    // AR channel //
+    reg [31:0] ar_addr_reg, ar_addr_reg_next;
+
+    parameter AR_IDLE = 2'b01;
+    parameter AR_VALID = 2'b10;
+
+    reg [1:0] ar_state, ar_state_next;
+
+    always @ (posedge ACLK, negedge ARESET) begin
+        if (!ARESET) begin
+            ar_state = AR_IDLE;
+            ar_addr_reg = 0;
+        end
+        else begin
+            ar_state = ar_state_next;
+            ar_addr_reg = ar_addr_reg_next;
+        end
+    end
+
+    always @ (posedge ACLK) begin
+        if (!ARESET) begin
+            ar_state_next = AR_IDLE;
+            ar_addr_reg_next = 0;
+            ARVALID = 0;
+        end
+        else begin
+            ar_addr_reg_next = ar_addr_reg;
+            case (ar_state)
+                AR_IDLE : begin
+                    ARVALID = 1'b0;
+                    if (valid_r) begin
+                        ar_addr_reg_next = ar_addr;
+                        ar_state_next = AR_VALID;
+                    end
+                end 
+                AR_VALID : begin
+                    ARVALID = 1'b1;
+                    ARADDR = ar_addr_reg;
+                    if (ARVALID && ARREADY) begin
+                        ar_state_next = AR_IDLE;
+                    end
+                end
+                default: ; 
+            endcase
+        end
+    end
+
+    // R channel no b//
+    reg [31:0] r_data_reg, r_data_reg_next;
+
+    parameter R_IDLE = 2'b01;
+    parameter R_VALID =  2'b10;
+
+    reg [1:0] r_state, r_state_next;
+
+    always @ (posedge ACLK, negedge ARESET) begin
+        if (!ARESET) begin
+            r_state = R_IDLE;
+            r_data_reg = 0;
+        end
+        else begin
+            r_state = r_state_next;
+            r_data_reg = r_data_reg_next;
+        end
+    end
+
+    always @(posedge ACLK) begin
+        if (!ARESET) begin
+            RREADY = 1'b0;
+            r_state_next = R_IDLE;
+            r_data_reg_next = 0;
+        end
+        else begin
+            r_data_reg_next = r_data_reg;
+            case (r_state)
+                R_IDLE: begin
+                    RREADY = 1'b0;
+                    if (valid_r) begin
+                        r_state_next = R_VALID; 
+                        r_data_reg_next = RDATA;
+                    end        
+                end 
+                R_VALID : begin
+                    RREADY = 1'b1;
+                    r_data = r_data_reg;
+                    if (RVALID && RREADY) begin
+                        r_state_next = R_IDLE;
+                    end
+                end
+                default: ;
+            endcase
+            
+        end
+    end
 
     // aw channel //
     reg [31:0] aw_addr_reg, aw_addr_reg_next;
@@ -52,7 +162,6 @@ module axi_master(
             aw_addr_reg_next = 0;
         end
         else begin
-            AWVALID = 1'b0;
             aw_addr_reg_next = aw_addr_reg;
             case (aw_state) 
                 AW_IDLE : begin
